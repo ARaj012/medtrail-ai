@@ -1,0 +1,19 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Secrets such as API keys: never upload
+.env
+
+# Python and Jupyter cache files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large generated Synthea output
+datasets/synthetic_patients/raw/
+
+# Editor and Windows files
+.vscode/
+Thumbs.db
+desktop.ini
