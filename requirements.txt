@@ -1,0 +1,23 @@
+# Data and machine learning
+numpy==2.5.5
+pandas==3.1.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+shap==0.54.1
+matplotlib==3.11.2
+joblib==1.6.0
+ucimlrepo==0.0.7
+
+# API
+fastapi==0.165.0
+uvicorn==0.54.0
+httpx==0.28.1
+
+# AI summaries
+google-genai==3.6.1
+python-dotenv==1.2.4
+textstat==0.7.13
+
+# Notebooks and testing
+ipykernel==7.4.0
+pytest==9.2.0
