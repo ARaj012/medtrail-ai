@@ -1,0 +1,67 @@
+{
+  "disease": "diabetes",
+  "model": "Logistic Regression",
+  "features": [
+    "Glucose",
+    "BloodPressure",
+    "BMI",
+    "Age"
+  ],
+  "inputs_must_be_above_zero": [
+    "Glucose",
+    "BloodPressure",
+    "BMI",
+    "Age"
+  ],
+  "risk_levels": {
+    "Low": "below 0.30",
+    "Moderate": "0.30 to below 0.60",
+    "High": "0.60 and above"
+  },
+  "dataset": "Pima Indians Diabetes, OpenML dataset 37 (original UCI file), 768 rows",
+  "split": "80/20 stratified, random_state=42: 614 train, 154 test",
+  "cross_validation": "5-fold stratified on the 614 training patients",
+  "cv_results": [
+    {
+      "model": "Logistic Regression",
+      "roc_auc": 0.834,
+      "accuracy": 0.778,
+      "precision": 0.741,
+      "recall": 0.565,
+      "f1": 0.641,
+      "roc_auc_spread": 0.02
+    },
+    {
+      "model": "Random Forest",
+      "roc_auc": 0.82,
+      "accuracy": 0.762,
+      "precision": 0.691,
+      "recall": 0.584,
+      "f1": 0.632,
+      "roc_auc_spread": 0.035
+    },
+    {
+      "model": "XGBoost",
+      "roc_auc": 0.814,
+      "accuracy": 0.749,
+      "precision": 0.66,
+      "recall": 0.589,
+      "f1": 0.621,
+      "roc_auc_spread": 0.034
+    }
+  ],
+  "test_metrics": {
+    "roc_auc": 0.787,
+    "accuracy": 0.708,
+    "precision": 0.596,
+    "recall": 0.519,
+    "f1": 0.554
+  },
+  "versions": {
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "trained_on": "2026-11-25",
+  "note": "Screening estimate from a small public dataset. Not a diagnosis."
+}
