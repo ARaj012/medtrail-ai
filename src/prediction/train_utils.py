@@ -42,23 +42,32 @@ def split_data(X, y):
     return train_test_split(X, y, test_size=0.2, stratify=y, random_state=RANDOM_STATE)
 
 
-def make_models():
-    """The three candidate pipelines. Filling gaps happens inside each pipeline (no leakage)."""
+def make_models(balanced=False, y_train=None):
+    """The three candidate pipelines. Filling gaps happens inside each pipeline (no leakage).
+
+    balanced=True gives both classes equal weight. Use it when the dataset's disease rate
+    comes from how patients were collected rather than from real life (e.g. the liver data).
+    """
+    class_weight = "balanced" if balanced else None
+    xgb_weight = 1.0
+    if balanced and y_train is not None:
+        xgb_weight = float((y_train == 0).sum() / (y_train == 1).sum())
     return {
         "Logistic Regression": Pipeline([
             ("impute", SimpleImputer(strategy="median")),
             ("scale", StandardScaler()),
-            ("model", LogisticRegression(max_iter=1000)),
+            ("model", LogisticRegression(max_iter=1000, class_weight=class_weight)),
         ]),
         "Random Forest": Pipeline([
             ("impute", SimpleImputer(strategy="median")),
             ("model", RandomForestClassifier(n_estimators=300, min_samples_leaf=5,
-                                             random_state=RANDOM_STATE)),
+                                             class_weight=class_weight, random_state=RANDOM_STATE)),
         ]),
         "XGBoost": Pipeline([
             ("impute", SimpleImputer(strategy="median")),
             ("model", XGBClassifier(n_estimators=200, max_depth=3, learning_rate=0.05,
-                                    eval_metric="logloss", random_state=RANDOM_STATE)),
+                                    scale_pos_weight=xgb_weight, eval_metric="logloss",
+                                    random_state=RANDOM_STATE)),
         ]),
     }
 

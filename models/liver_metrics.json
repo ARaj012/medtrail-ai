@@ -1,0 +1,87 @@
+{
+  "disease": "liver",
+  "model": "Random Forest",
+  "features": [
+    "TB",
+    "DB",
+    "Sgpt",
+    "Sgot",
+    "Alkphos",
+    "TP",
+    "ALB",
+    "A/G Ratio",
+    "Age",
+    "Sex"
+  ],
+  "risk_levels": {
+    "Low": "below 0.30",
+    "Moderate": "0.30 to below 0.60",
+    "High": "0.60 and above"
+  },
+  "split": "80/20 stratified, random_state=42",
+  "cross_validation": "5-fold stratified on the training set",
+  "cv_results": [
+    {
+      "model": "Random Forest",
+      "roc_auc": 0.719,
+      "accuracy": 0.653,
+      "precision": 0.829,
+      "recall": 0.649,
+      "f1": 0.727,
+      "roc_auc_spread": 0.035
+    },
+    {
+      "model": "Logistic Regression",
+      "roc_auc": 0.718,
+      "accuracy": 0.629,
+      "precision": 0.863,
+      "recall": 0.572,
+      "f1": 0.685,
+      "roc_auc_spread": 0.033
+    },
+    {
+      "model": "XGBoost",
+      "roc_auc": 0.694,
+      "accuracy": 0.649,
+      "precision": 0.798,
+      "recall": 0.68,
+      "f1": 0.733,
+      "roc_auc_spread": 0.045
+    }
+  ],
+  "test_metrics": {
+    "roc_auc": 0.784,
+    "accuracy": 0.711,
+    "precision": 0.843,
+    "recall": 0.728,
+    "f1": 0.781
+  },
+  "versions": {
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "trained_on": "2026-11-27",
+  "dataset": "UCI ILPD (id 225), north-east Andhra Pradesh; exact duplicate rows removed",
+  "target": "1 = liver patient (Selector 1), 0 = not (Selector 2)",
+  "class_weight": "balanced (the 71% disease rate reflects hospital collection, not real life)",
+  "feature_meaning": {
+    "TB": "Total Bilirubin (mg/dL)",
+    "DB": "Direct Bilirubin (mg/dL)",
+    "Sgpt": "SGPT (U/L)",
+    "Sgot": "SGOT (U/L)",
+    "Alkphos": "Alkaline Phosphatase (U/L)",
+    "TP": "Total Protein (g/dL)",
+    "ALB": "Albumin (g/dL)",
+    "A/G Ratio": "Albumin/Globulin ratio",
+    "Age": "Age (years)",
+    "Sex": "1 = male, 0 = female"
+  },
+  "repeated_split_test_roc_auc": {
+    "average": 0.759,
+    "lowest": 0.7,
+    "highest": 0.792
+  },
+  "limitation": "Weak, noisy dataset: liver values overlap heavily between groups and one test split of ~115 patients varies a lot. Show this result as indicative only.",
+  "note": "Screening estimate from a small public dataset. Not a diagnosis."
+}
