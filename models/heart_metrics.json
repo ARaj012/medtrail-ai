@@ -1,0 +1,77 @@
+{
+  "disease": "heart",
+  "model": "Logistic Regression",
+  "features": [
+    "age",
+    "sex",
+    "trestbps",
+    "chol",
+    "fbs"
+  ],
+  "risk_levels": {
+    "Low": "below 0.30",
+    "Moderate": "0.30 to below 0.60",
+    "High": "0.60 and above"
+  },
+  "split": "80/20 stratified, random_state=42",
+  "cross_validation": "5-fold stratified on the training set",
+  "cv_results": [
+    {
+      "model": "Logistic Regression",
+      "roc_auc": 0.693,
+      "accuracy": 0.648,
+      "precision": 0.629,
+      "recall": 0.604,
+      "f1": 0.612,
+      "roc_auc_spread": 0.068
+    },
+    {
+      "model": "XGBoost",
+      "roc_auc": 0.675,
+      "accuracy": 0.611,
+      "precision": 0.575,
+      "recall": 0.575,
+      "f1": 0.574,
+      "roc_auc_spread": 0.063
+    },
+    {
+      "model": "Random Forest",
+      "roc_auc": 0.674,
+      "accuracy": 0.624,
+      "precision": 0.614,
+      "recall": 0.514,
+      "f1": 0.556,
+      "roc_auc_spread": 0.047
+    }
+  ],
+  "test_metrics": {
+    "roc_auc": 0.701,
+    "accuracy": 0.656,
+    "precision": 0.64,
+    "recall": 0.571,
+    "f1": 0.604
+  },
+  "versions": {
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "trained_on": "2026-11-27",
+  "dataset": "UCI Heart Disease (id 45), Cleveland Clinic, 303 patients (US)",
+  "target": "1 = num 1-4 (disease), 0 = num 0",
+  "feature_meaning": {
+    "age": "Age (years)",
+    "sex": "1 = male, 0 = female",
+    "trestbps": "Resting systolic blood pressure (mm Hg)",
+    "chol": "Total Cholesterol (mg/dL)",
+    "fbs": "1 if Fasting Blood Sugar > 120 mg/dL, else 0"
+  },
+  "cv_roc_auc_with_all_13_inputs": 0.896,
+  "repeated_split_test_roc_auc": {
+    "average": 0.705,
+    "lowest": 0.675,
+    "highest": 0.741
+  },
+  "limitation": "Uses 5 of 13 inputs because the other 8 need ECG, exercise tests or scans. Weakest MedTrail model; show as indicative only.",
+  "note": "Screening estimate from a small public dataset. Not a diagnosis."
+}
