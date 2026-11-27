@@ -1,0 +1,58 @@
+{
+  "disease": "liver",
+  "method": "SHAP (TreeExplainer)",
+  "unit": "probability",
+  "patients": 570,
+  "importance": [
+    {
+      "input": "DB",
+      "name": "Direct Bilirubin",
+      "mean_abs_shap": 0.06
+    },
+    {
+      "input": "TB",
+      "name": "Total Bilirubin",
+      "mean_abs_shap": 0.0553
+    },
+    {
+      "input": "Alkphos",
+      "name": "Alkaline Phosphatase",
+      "mean_abs_shap": 0.0551
+    },
+    {
+      "input": "Sgpt",
+      "name": "SGPT",
+      "mean_abs_shap": 0.0486
+    },
+    {
+      "input": "Sgot",
+      "name": "SGOT",
+      "mean_abs_shap": 0.0402
+    },
+    {
+      "input": "Age",
+      "name": "Age",
+      "mean_abs_shap": 0.0362
+    },
+    {
+      "input": "A/G Ratio",
+      "name": "A/G Ratio",
+      "mean_abs_shap": 0.0232
+    },
+    {
+      "input": "TP",
+      "name": "Total Protein",
+      "mean_abs_shap": 0.0208
+    },
+    {
+      "input": "ALB",
+      "name": "Albumin",
+      "mean_abs_shap": 0.0181
+    },
+    {
+      "input": "Sex",
+      "name": "Sex",
+      "mean_abs_shap": 0.0026
+    }
+  ]
+}

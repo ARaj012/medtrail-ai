@@ -1,0 +1,33 @@
+{
+  "disease": "heart",
+  "method": "SHAP (LinearExplainer)",
+  "unit": "log-odds",
+  "patients": 303,
+  "importance": [
+    {
+      "input": "sex",
+      "name": "Sex",
+      "mean_abs_shap": 0.7809
+    },
+    {
+      "input": "age",
+      "name": "Age",
+      "mean_abs_shap": 0.4134
+    },
+    {
+      "input": "chol",
+      "name": "Total Cholesterol",
+      "mean_abs_shap": 0.1753
+    },
+    {
+      "input": "trestbps",
+      "name": "Systolic BP",
+      "mean_abs_shap": 0.141
+    },
+    {
+      "input": "fbs",
+      "name": "Fasting Blood Sugar",
+      "mean_abs_shap": 0.0482
+    }
+  ]
+}

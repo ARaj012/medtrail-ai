@@ -15,6 +15,8 @@ from pathlib import Path
 import joblib
 import pandas as pd
 
+from src.explainability.explain import explain_one
+
 ROOT = Path(__file__).resolve().parents[2]
 MODELS_DIR = ROOT / "models"
 
@@ -71,6 +73,10 @@ MODEL_SPECS = {
     },
 }
 
+# Readable names for profile inputs (lab inputs use their test name)
+PROFILE_LABELS = {"age": "Age", "sex": "Sex", "bmi": "BMI",
+                  "systolic_bp": "Systolic BP", "diastolic_bp": "Diastolic BP"}
+
 # Inputs that need converting before the model can use them
 CONVERSIONS = {
     ("heart", "fbs"): lambda value: int(value > 120),   # fasting sugar above 120 mg/dL -> 1
@@ -100,6 +106,25 @@ def standard_name(test_name):
     name = str(test_name).strip()
     return ALIASES.get(name.lower(), name)
 
+
+def input_labels(disease):
+    """Readable name for every model input, used in explanations."""
+    spec = MODEL_SPECS[disease]
+    labels = {column: name for column, (name, _) in spec["tests"].items()}
+    labels.update({column: PROFILE_LABELS[field] for column, field in spec["profile"].items()})
+    return labels
+
+
+def display_values(disease, row, used):
+    """Readable values for inputs whose model value is a code (sex) or was converted (fbs)."""
+    shown = {}
+    for column, field in MODEL_SPECS[disease]["profile"].items():
+        if field == "sex":
+            shown[column] = "male" if row[column] == 1 else "female"
+    if disease == "heart" and "fbs" in used:
+        sugar = used["fbs"]["value"]
+        shown["fbs"] = f"{sugar:g} mg/dL, {'above' if sugar > 120 else '120 or below'} 120"
+    return shown
 
 def same_unit(a, b):
     return str(a).replace(" ", "").lower() == str(b).replace(" ", "").lower()
@@ -190,6 +215,8 @@ def predict_disease(disease, profile, test_results):
         "model": load_metrics(disease)["model"],
         "inputs_used": used,
         "source_report_ids": sorted({v["report_id"] for v in used.values() if v.get("report_id")}),
+                "explanation": explain_one(model, X, labels=input_labels(disease),
+                                   display=display_values(disease, row, used)),
         "note": spec["note"],
         "disclaimer": DISCLAIMER,
     }

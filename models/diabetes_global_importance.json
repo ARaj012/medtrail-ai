@@ -1,0 +1,28 @@
+{
+  "disease": "diabetes",
+  "method": "SHAP (LinearExplainer)",
+  "unit": "log-odds",
+  "patients": 768,
+  "importance": [
+    {
+      "input": "Glucose",
+      "name": "Glucose",
+      "mean_abs_shap": 0.941
+    },
+    {
+      "input": "BMI",
+      "name": "BMI",
+      "mean_abs_shap": 0.5536
+    },
+    {
+      "input": "Age",
+      "name": "Age",
+      "mean_abs_shap": 0.2679
+    },
+    {
+      "input": "BloodPressure",
+      "name": "Diastolic BP",
+      "mean_abs_shap": 0.0219
+    }
+  ]
+}

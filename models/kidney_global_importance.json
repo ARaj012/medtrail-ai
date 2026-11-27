@@ -1,0 +1,48 @@
+{
+  "disease": "kidney",
+  "method": "SHAP (TreeExplainer)",
+  "unit": "probability",
+  "patients": 400,
+  "importance": [
+    {
+      "input": "hemo",
+      "name": "Hemoglobin",
+      "mean_abs_shap": 0.2061
+    },
+    {
+      "input": "sc",
+      "name": "Serum Creatinine",
+      "mean_abs_shap": 0.1071
+    },
+    {
+      "input": "al",
+      "name": "Urine Albumin",
+      "mean_abs_shap": 0.0749
+    },
+    {
+      "input": "bgr",
+      "name": "Glucose",
+      "mean_abs_shap": 0.0388
+    },
+    {
+      "input": "bu",
+      "name": "Blood Urea",
+      "mean_abs_shap": 0.0349
+    },
+    {
+      "input": "bp",
+      "name": "Diastolic BP",
+      "mean_abs_shap": 0.0178
+    },
+    {
+      "input": "age",
+      "name": "Age",
+      "mean_abs_shap": 0.0112
+    },
+    {
+      "input": "su",
+      "name": "Urine Sugar",
+      "mean_abs_shap": 0.0048
+    }
+  ]
+}
