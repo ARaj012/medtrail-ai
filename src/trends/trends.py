@@ -21,6 +21,16 @@ NEAR_LIMIT = 0.10     # "close to a limit" = within 10% of the reference range w
 FAR_OUTSIDE = 0.50    # more than 50% beyond a limit counts as high severity
 SEVERITY_ORDER = {"high": 0, "moderate": 1, "low": 2}
 
+# Tests where usually only ONE side is a clinical concern (e.g. a low bilirubin is not a problem).
+# Values on the other side are still reported, but they do not raise an alert.
+CONCERN_SIDE = {
+    "HbA1c": "high", "Serum Creatinine": "high", "Blood Urea": "high", "Blood Urea Nitrogen": "high",
+    "SGPT": "high", "SGOT": "high", "Total Bilirubin": "high", "Direct Bilirubin": "high",
+    "Alkaline Phosphatase": "high", "Total Cholesterol": "high", "LDL Cholesterol": "high",
+    "Triglycerides": "high", "Urine Albumin/Creatinine Ratio": "high",
+    "eGFR": "low", "HDL Cholesterol": "low",
+}
+
 
 def _unit(value):
     return str(value or "").replace(" ", "").lower()
@@ -41,12 +51,13 @@ def _direction(values):
         return "not_enough_data"
     steps = [b - a for a, b in zip(values, values[1:])]
     base = abs(values[0]) or 1.0
-    if abs(values[-1] - values[0]) / base < MIN_CHANGE:
-        return "stable"
-    if all(step > 0 for step in steps):
+    total_change = abs(values[-1] - values[0]) / base
+    if all(step > 0 for step in steps) and total_change >= MIN_CHANGE:
         return "rising"
-    if all(step < 0 for step in steps):
+    if all(step < 0 for step in steps) and total_change >= MIN_CHANGE:
         return "falling"
+    if max(abs(step) for step in steps) / base < MIN_CHANGE:
+        return "stable"                  # every change was smaller than 5%
     return "mixed"
 
 
@@ -148,6 +159,13 @@ def analyse_test(name, results):
     meaning = _meaning(direction, status)
     severity = _severity(status, meaning, _far_outside(values[-1], low, high))
 
+    notes = []
+    side = "high" if status in ("high", "near_high") else "low" if status in ("low", "near_low") else None
+    concern = CONCERN_SIDE.get(name)
+    if concern and side and side != concern:
+        severity = None
+        notes.append(f"Only {concern} values of {name} are usually a clinical concern, so no alert is raised.")
+
     result = {
         "test_name": name,
         "unit": latest.get("unit"),
@@ -164,7 +182,9 @@ def analyse_test(name, results):
         "source_report_ids": [p["report_id"] for p in points if p.get("report_id")],
     }
     if skipped_units:
-        result["note"] = f"{skipped_units} earlier result(s) used a different unit and were not compared."
+        notes.append(f"{skipped_units} earlier result(s) used a different unit and were not compared.")
+    if notes:
+        result["note"] = " ".join(notes)
     return result
 
 

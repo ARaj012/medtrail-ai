@@ -73,3 +73,25 @@ def test_alerts_sorted_most_serious_first():
     data = results("SGPT", [37, 37.2, 37.4], 7, 40, "U/L") + results("HbA1c", [5.9, 6.4, 6.8], 4.0, 5.6, "%")
     out = analyse_trends(data)
     assert [a["severity"] for a in out["alerts"]] == ["high", "low"]
+    
+    
+    
+
+def test_low_bilirubin_is_not_an_alert():
+    a = analyse_test("Total Bilirubin", results("Total Bilirubin", [0.4, 0.3, 0.1], 0.2, 1.2))
+    assert a["range_status"] == "low" and a["alert"] is False and "Only high" in a["note"]
+
+
+def test_falling_egfr_below_60_is_high_alert():
+    a = analyse_test("eGFR", results("eGFR", [43.5, 34.5, 32.8], 60, None, "mL/min/1.73m2"))
+    assert a["direction"] == "falling" and a["severity"] == "high"
+
+
+def test_low_hemoglobin_still_alerts_because_both_sides_matter():
+    a = analyse_test("Hemoglobin", results("Hemoglobin", [11.0], 12.0, 15.5, "g/dL"))
+    assert a["alert"] is True
+
+
+def test_big_swing_back_to_start_is_mixed_not_stable():
+    a = analyse_test("Triglycerides", results("Triglycerides", [187.6, 131.4, 196.5], None, 150))
+    assert a["direction"] == "mixed"
