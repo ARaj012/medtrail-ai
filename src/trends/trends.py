@@ -164,6 +164,8 @@ def analyse_test(name, results):
     concern = CONCERN_SIDE.get(name)
     if concern and side and side != concern:
         severity = None
+        if meaning in ("worsening", "improving"):
+            meaning = "not_a_concern"      # e.g. falling BUN: moving towards the side that does not matter
         notes.append(f"Only {concern} values of {name} are usually a clinical concern, so no alert is raised.")
 
     result = {

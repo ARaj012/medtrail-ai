@@ -73,9 +73,7 @@ def test_alerts_sorted_most_serious_first():
     data = results("SGPT", [37, 37.2, 37.4], 7, 40, "U/L") + results("HbA1c", [5.9, 6.4, 6.8], 4.0, 5.6, "%")
     out = analyse_trends(data)
     assert [a["severity"] for a in out["alerts"]] == ["high", "low"]
-    
-    
-    
+
 
 def test_low_bilirubin_is_not_an_alert():
     a = analyse_test("Total Bilirubin", results("Total Bilirubin", [0.4, 0.3, 0.1], 0.2, 1.2))
@@ -95,3 +93,10 @@ def test_low_hemoglobin_still_alerts_because_both_sides_matter():
 def test_big_swing_back_to_start_is_mixed_not_stable():
     a = analyse_test("Triglycerides", results("Triglycerides", [187.6, 131.4, 196.5], None, 150))
     assert a["direction"] == "mixed"
+
+
+def test_falling_bun_near_low_limit_is_not_called_worsening():
+    # Only high BUN is usually a concern, so a fall towards the lower limit is not "worsening"
+    a = analyse_test("Blood Urea Nitrogen", results("Blood Urea Nitrogen", [18.1, 10.6, 7.7], 7, 20))
+    assert a["direction"] == "falling"
+    assert a["trend_meaning"] == "not_a_concern" and a["alert"] is False

@@ -1,0 +1,156 @@
+{
+ "status": "passed",
+ "attempts": 1,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.5",
+ "summary": {
+  "sections": [
+   {
+    "title": "About your records",
+    "sentences": [
+     {
+      "text": "The patient is a 57-year-old female, and your records contain 12 source reports dated between 1995-08-13 and 2021-11-07.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Health conditions in your records",
+    "sentences": [
+     {
+      "text": "Your records list active conditions including diabetes, hypertriglyceridemia, metabolic syndrome X, hypertension, diabetic retinopathy associated with type II diabetes mellitus, nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, neuropathy due to type 2 diabetes mellitus, chronic kidney disease stage 1, and diabetic renal disease.",
+      "fact_ids": [
+       "F14",
+       "F15",
+       "F16",
+       "F17",
+       "F18",
+       "F19",
+       "F20",
+       "F21",
+       "F22"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Test results to look at",
+    "sentences": [
+     {
+      "text": "For creatinine (a kidney test), the latest value was 2.3 mg/dL on 2021-11-07, which is above the usual range of 0.6-1.2 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 1.7 to 2.2 and then 2.3 mg/dL.",
+      "fact_ids": [
+       "F42",
+       "F43"
+      ]
+     },
+     {
+      "text": "For eGFR (how well the kidneys filter blood), the latest value was 32.8 mL/min/1.73m2 on 2021-11-07, which is below the usual range of above 60 mL/min/1.73m2, and between 2021-09-05 and 2021-11-07 it went down from 43.5 to 34.5 and then 32.8 mL/min/1.73m2.",
+      "fact_ids": [
+       "F52",
+       "F53"
+      ]
+     },
+     {
+      "text": "For LDL cholesterol (often called 'bad' cholesterol), the latest value was 140.7 mg/dL on 2021-11-07, which is above the usual range of below 100 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 120 to 122.1 and then 140.7 mg/dL.",
+      "fact_ids": [
+       "F38",
+       "F39"
+      ]
+     },
+     {
+      "text": "For total cholesterol, the latest value was 227.6 mg/dL on 2021-11-07, which is above the usual range of below 200 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 208.8 to 209 and then 227.6 mg/dL.",
+      "fact_ids": [
+       "F46",
+       "F47"
+      ]
+     },
+     {
+      "text": "For blood sugar (glucose), the latest value was 112.3 mg/dL on 2021-11-07, which is above the usual range of 70-99 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 104.8 to 107.4 and then 112.3 mg/dL.",
+      "fact_ids": [
+       "F31",
+       "F32"
+      ]
+     },
+     {
+      "text": "For triglycerides (a type of blood fat), the latest value was 157.5 mg/dL on 2021-11-07, which is above the usual range of below 150 mg/dL, and between 2021-09-05 and 2021-11-07 it went from 171.1 to 178.9 and then 157.5 mg/dL.",
+      "fact_ids": [
+       "F48",
+       "F49"
+      ]
+     },
+     {
+      "text": "The other test results did not raise an alert.",
+      "fact_ids": [
+       "F33",
+       "F35",
+       "F37",
+       "F40",
+       "F44",
+       "F50"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Blood pressure and haemoglobin",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening was normal, with the latest reading being 132/86 on 2021-11-07, which is below 140/90.",
+      "fact_ids": [
+       "F54"
+      ]
+     },
+     {
+      "text": "Anaemia screening was also normal, showing a haemoglobin level of 13.6 g/dL on 2018-10-21, which is at or above 12 g/dL.",
+      "fact_ids": [
+       "F37",
+       "F55"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Your medicines and allergies",
+    "sentences": [
+     {
+      "text": "Your ongoing medications include lisinopril 10 MG Oral Tablet, Hydrochlorothiazide 25 MG Oral Tablet, and insulin human isophane 70 UNT/ML / Regular Insulin Human 30 UNT/ML Injectable Suspension [Humulin].",
+      "fact_ids": [
+       "F24",
+       "F25",
+       "F26"
+      ]
+     },
+     {
+      "text": "No allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F28"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Points to discuss with your doctor",
+    "sentences": [
+     {
+      "text": "You can talk with your doctor about your kidney health test trends, your blood sugar levels, and your cholesterol numbers.",
+      "fact_ids": [
+       "F31",
+       "F32",
+       "F38",
+       "F39",
+       "F42",
+       "F43",
+       "F46",
+       "F47",
+       "F52",
+       "F53"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": []
+}

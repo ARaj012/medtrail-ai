@@ -14,7 +14,7 @@ from src.summaries.facts import build_facts, num, range_text
 
 PLAIN = {
     "en": {
-        "HbA1c": "HbA1c (average blood sugar over about 3 months)",
+        "HbA1c": "HbA1c (average blood sugar over the last few months)",
         "Glucose": "blood sugar (glucose)",
         "Serum Creatinine": "creatinine (a kidney test)",
         "eGFR": "eGFR (how well the kidneys filter blood)",
@@ -31,7 +31,7 @@ PLAIN = {
         "Triglycerides": "triglycerides (a type of blood fat)",
     },
     "hi": {
-        "HbA1c": "HbA1c (लगभग 3 महीने की औसत ब्लड शुगर)",
+        "HbA1c": "HbA1c (पिछले कुछ महीनों की औसत ब्लड शुगर)",
         "Glucose": "ब्लड शुगर (ग्लूकोज़)",
         "Serum Creatinine": "क्रिएटिनिन (किडनी की जांच)",
         "eGFR": "eGFR (किडनी खून को कितनी अच्छी तरह साफ़ करती है)",
@@ -59,7 +59,7 @@ TEXT = {
         "trend": "{name} has {moved} in each of your last {n} reports ({series} {unit}) and is now {where} the usual range ({range}).",
         "single": "Your latest {name} result was {value} {unit} ({date}), which is {where} the usual range ({range}).",
         "improving": " The latest change is towards the usual range.",
-        "others": "Your other {m} test results were within the usual range or are not usually a concern.",
+        "others": "Your other test results were within the usual range or are not usually a concern.",
         "moved": {"rising": "gone up", "falling": "gone down"},
         "where": {"high": "higher than", "low": "lower than", "near_high": "close to the top of",
                   "near_low": "close to the bottom of"},
@@ -92,7 +92,7 @@ TEXT = {
         "trend": "{name} आपकी पिछली {n} रिपोर्ट में लगातार {moved} है ({series} {unit}) और अब सामान्य सीमा ({range}) {where}।",
         "single": "{date} को आपकी {name} रिपोर्ट {value} {unit} थी, जो सामान्य सीमा ({range}) {where}।",
         "improving": " हाल का बदलाव सामान्य सीमा की ओर है।",
-        "others": "आपकी बाकी {m} जांचें सामान्य सीमा में थीं या आम तौर पर चिंता की बात नहीं हैं।",
+        "others": "आपकी बाकी जांचें सामान्य सीमा में थीं या आम तौर पर चिंता की बात नहीं हैं।",
         "moved": {"rising": "बढ़ा", "falling": "घटा"},
         "where": {"high": "से ज़्यादा है", "low": "से कम है", "near_high": "की ऊपरी हद के पास है",
                   "near_low": "की निचली हद के पास है"},
@@ -138,6 +138,12 @@ def deviation(test):
 def rank(tests):
     """Most serious first: by severity, then by distance outside the range."""
     return sorted(tests, key=lambda t: (SEVERITY_ORDER[t["severity"]], -deviation(t)))
+
+
+def key_tests(analysis, limit=6):
+    """The results a patient summary must explain: alerts (high, then moderate), most serious first.
+    Used by the template AND required from Gemini, so code (not the AI) decides what is important."""
+    return rank([t for t in analysis["trends"]["all_tests"] if t["severity"] in ("high", "moderate")])[:limit]
 
 
 def nice_date(text, language="en"):
@@ -193,7 +199,7 @@ def patient_summary(analysis, facts, language="en"):
 
     # Test results that raised an alert (high and moderate), most serious first
     tests = analysis["trends"]["all_tests"]
-    alerts = rank([t for t in tests if t["severity"] in ("high", "moderate")])[:6]
+    alerts = key_tests(analysis)
     asks = []
     for t in alerts:
         name = plain.get(t["test_name"], t["test_name"])
@@ -218,7 +224,7 @@ def patient_summary(analysis, facts, language="en"):
         sections[2]["sentences"].append(s(text, cited))
     others = [t for t in tests if t not in alerts]
     if others:
-        sections[2]["sentences"].append(s(T["others"].format(m=len(others)), [t["_fact_ids"][0] for t in others]))
+        sections[2]["sentences"].append(s(T["others"], [t["_fact_ids"][0] for t in others]))
 
     # Screening
     bp = analysis["screening"]["high_blood_pressure"]
@@ -328,7 +334,7 @@ def doctor_summary(analysis, facts):
     not_calculated = [f for f in _find(facts, "ml") if f["kind"] == "missing"]
     if not_calculated:
         missing.append(s("Risk models not run because inputs are missing: "
-                         + ", ".join(f["disease"] for f in not_calculated) + " (see section 6).", _ids(not_calculated)))
+                         + ", ".join(f["disease"] for f in not_calculated) + " (see the ML section).", _ids(not_calculated)))
     if not p.get("pregnant") and p.get("sex") == "female":
         missing.append(s("Pregnancy status is taken from the profile and was not verified in the reports.", _ids(_find(facts, "overview"))))
     add("7. Missing or unverified information", missing)

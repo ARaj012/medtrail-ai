@@ -1,0 +1,424 @@
+{
+ "status": "passed",
+ "attempts": 1,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.5",
+ "summary": {
+  "sections": [
+   {
+    "title": "Patient and records",
+    "sentences": [
+     {
+      "text": "The patient is a 71-year-old male, with records containing 15 source reports (6 lab reports) dated 1952-04-22 to 2021-06-11.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "1. Documented history",
+    "sentences": [
+     {
+      "text": "Documented diagnoses include Diabetes (active, recorded since 1981-10-30), Hypertriglyceridemia (active, recorded since 1982-11-05), Metabolic syndrome X (active, recorded since 1982-11-05), and Anemia (active, recorded since 1982-11-05).",
+      "fact_ids": [
+       "F17",
+       "F18",
+       "F19",
+       "F20"
+      ]
+     },
+     {
+      "text": "Documented diagnoses also include Diabetic retinopathy associated with type II diabetes mellitus (active, recorded since 1989-12-15) and Neuropathy due to type 2 diabetes mellitus (active, recorded since 1989-12-15).",
+      "fact_ids": [
+       "F21",
+       "F22"
+      ]
+     },
+     {
+      "text": "Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus has been documented as active since 2004-03-05.",
+      "fact_ids": [
+       "F23"
+      ]
+     },
+     {
+      "text": "Hyperlipidemia is documented as an active diagnosis recorded since 2008-03-28.",
+      "fact_ids": [
+       "F24"
+      ]
+     },
+     {
+      "text": "Macular edema and retinopathy due to type 2 diabetes mellitus is a documented diagnosis active since 2015-05-08.",
+      "fact_ids": [
+       "F25"
+      ]
+     },
+     {
+      "text": "The patient has a previous documented diagnosis of Viral sinusitis recorded on 2019-10-24 and resolved on 2019-11-16.",
+      "fact_ids": [
+       "F26"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "2. Laboratory observations (latest values)",
+    "sentences": [
+     {
+      "text": "Latest Albumin is 4.8 g/dL on 2021-04-15 (reference 3.5-5 g/dL), within the reference range.",
+      "fact_ids": [
+       "F31"
+      ]
+     },
+     {
+      "text": "Latest Alkaline Phosphatase is 104.3 U/L on 2021-04-15 (reference 44-147 U/L), within the reference range.",
+      "fact_ids": [
+       "F33"
+      ]
+     },
+     {
+      "text": "Latest Blood Urea Nitrogen is 17.1 mg/dL on 2021-06-11 (reference 7-20 mg/dL), within the reference range.",
+      "fact_ids": [
+       "F35"
+      ]
+     },
+     {
+      "text": "Latest Glucose is 100.2 mg/dL on 2021-06-11 (reference 70-99 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F37"
+      ]
+     },
+     {
+      "text": "Latest HDL Cholesterol is 45.2 mg/dL on 2021-06-11 (reference above 40 mg/dL), within the reference range.",
+      "fact_ids": [
+       "F39"
+      ]
+     },
+     {
+      "text": "Latest HbA1c is 7 % on 2021-06-11 (reference 4-5.6 %), above the reference range.",
+      "fact_ids": [
+       "F41"
+      ]
+     },
+     {
+      "text": "Latest Hemoglobin is 15.7 g/dL on 2021-06-11 (reference 13.5-17.5 g/dL), within the reference range.",
+      "fact_ids": [
+       "F43"
+      ]
+     },
+     {
+      "text": "Latest LDL Cholesterol is 153 mg/dL on 2021-06-11 (reference below 100 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F44"
+      ]
+     },
+     {
+      "text": "Latest Potassium is 4.3 mmol/L on 2021-06-11 (reference 3.5-5.1 mmol/L), within the reference range.",
+      "fact_ids": [
+       "F46"
+      ]
+     },
+     {
+      "text": "Latest SGOT is 36.3 U/L on 2021-04-15 (reference 8-40 U/L), within the reference range.",
+      "fact_ids": [
+       "F48"
+      ]
+     },
+     {
+      "text": "Latest SGPT is 59.6 U/L on 2021-04-15 (reference 7-40 U/L), above the reference range.",
+      "fact_ids": [
+       "F50"
+      ]
+     },
+     {
+      "text": "Latest Serum Creatinine is 0.9 mg/dL on 2021-06-11 (reference 0.6-1.2 mg/dL), within the reference range.",
+      "fact_ids": [
+       "F52"
+      ]
+     },
+     {
+      "text": "Latest Sodium is 139.2 mmol/L on 2021-06-11 (reference 135-145 mmol/L), within the reference range.",
+      "fact_ids": [
+       "F54"
+      ]
+     },
+     {
+      "text": "Latest Total Bilirubin is 0.3 mg/dL on 2021-04-15 (reference 0.2-1.2 mg/dL), close to the lower limit.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "Latest Total Cholesterol is 237.5 mg/dL on 2021-06-11 (reference below 200 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F58"
+      ]
+     },
+     {
+      "text": "Latest Total Protein is 7.09 g/dL on 2021-04-15 (reference 6-8.3 g/dL), within the reference range.",
+      "fact_ids": [
+       "F60"
+      ]
+     },
+     {
+      "text": "Latest Triglycerides is 196.5 mg/dL on 2021-06-11 (reference below 150 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F62"
+      ]
+     },
+     {
+      "text": "Latest Urine Albumin/Creatinine Ratio is 0.6 mg/g on 2021-06-11 (reference below 30 mg/g), within the reference range.",
+      "fact_ids": [
+       "F64"
+      ]
+     },
+     {
+      "text": "Latest eGFR is 126.2 mL/min/1.73m2 on 2021-06-11 (reference above 60 mL/min/1.73m2), within the reference range.",
+      "fact_ids": [
+       "F66"
+      ]
+     },
+     {
+      "text": "Synthea gives no reference ranges; typical adult ranges were added for this demonstration.",
+      "fact_ids": [
+       "F74"
+      ]
+     },
+     {
+      "text": "5 Total Protein value(s) were in g/L although labelled g/dL in Synthea; they were divided by 10.",
+      "fact_ids": [
+       "F75"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "3. Changes over time",
+    "sentences": [
+     {
+      "text": "Albumin over the last 3 reports: 4.9 -> 3.6 -> 4.8 g/dL (2019-04-16, 2020-04-15, 2021-04-15); direction: mixed.",
+      "fact_ids": [
+       "F32"
+      ]
+     },
+     {
+      "text": "Alkaline Phosphatase over the last 3 reports: 95.6 -> 88.7 -> 104.3 U/L (2019-04-16, 2020-04-15, 2021-04-15); direction: mixed.",
+      "fact_ids": [
+       "F34"
+      ]
+     },
+     {
+      "text": "Blood Urea Nitrogen over the last 3 reports: 17.5 -> 9.4 -> 17.1 mg/dL (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F36"
+      ]
+     },
+     {
+      "text": "Glucose over the last 3 reports: 105.7 -> 109.1 -> 100.2 mg/dL (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F38"
+      ]
+     },
+     {
+      "text": "HDL Cholesterol over the last 3 reports: 47.7 -> 34.5 -> 45.2 mg/dL (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F40"
+      ]
+     },
+     {
+      "text": "HbA1c over the last 3 reports: 7 -> 7 -> 7 % (2019-11-08, 2020-06-05, 2021-06-11); direction: stable.",
+      "fact_ids": [
+       "F42"
+      ]
+     },
+     {
+      "text": "LDL Cholesterol over the last 3 reports: 128.5 -> 126.3 -> 153 mg/dL (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F45"
+      ]
+     },
+     {
+      "text": "Potassium over the last 3 reports: 4 -> 5 -> 4.3 mmol/L (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F47"
+      ]
+     },
+     {
+      "text": "SGOT over the last 3 reports: 26.4 -> 12.1 -> 36.3 U/L (2019-04-16, 2020-04-15, 2021-04-15); direction: mixed.",
+      "fact_ids": [
+       "F49"
+      ]
+     },
+     {
+      "text": "SGPT over the last 3 reports: 24.4 -> 34.7 -> 59.6 U/L (2019-04-16, 2020-04-15, 2021-04-15); direction: rising, worsening (moving away from the reference range).",
+      "fact_ids": [
+       "F51"
+      ]
+     },
+     {
+      "text": "Serum Creatinine over the last 3 reports: 0.9 -> 2.6 -> 0.9 mg/dL (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F53"
+      ]
+     },
+     {
+      "text": "Sodium over the last 3 reports: 136.5 -> 142.2 -> 139.2 mmol/L (2020-06-05, 2021-04-15, 2021-06-11); direction: stable.",
+      "fact_ids": [
+       "F55"
+      ]
+     },
+     {
+      "text": "Total Bilirubin over the last 3 reports: 0.6 -> 0.3 -> 0.3 mg/dL (2019-04-16, 2020-04-15, 2021-04-15); direction: mixed.",
+      "fact_ids": [
+       "F57"
+      ]
+     },
+     {
+      "text": "Total Cholesterol over the last 3 reports: 213.7 -> 173.4 -> 237.5 mg/dL (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F59"
+      ]
+     },
+     {
+      "text": "Total Protein over the last 3 reports: 6.16 -> 6.19 -> 7.09 g/dL (2019-04-16, 2020-04-15, 2021-04-15); direction: rising.",
+      "fact_ids": [
+       "F61"
+      ]
+     },
+     {
+      "text": "Triglycerides over the last 3 reports: 187.6 -> 131.4 -> 196.5 mg/dL (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F63"
+      ]
+     },
+     {
+      "text": "Urine Albumin/Creatinine Ratio over the last 3 reports: 1.4 -> 4.8 -> 0.6 mg/g (2019-11-08, 2020-06-05, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F65"
+      ]
+     },
+     {
+      "text": "eGFR over the last 3 reports: 105.7 -> 70.9 -> 126.2 mL/min/1.73m2 (2020-06-05, 2021-04-15, 2021-06-11); direction: mixed.",
+      "fact_ids": [
+       "F67"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "4. Medications and allergies",
+    "sentences": [
+     {
+      "text": "Medications include Simvastatin 10 MG Oral Tablet ongoing since 2008-04-18, 120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler ongoing since 1952-04-22, and NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler ongoing since 1952-04-22.",
+      "fact_ids": [
+       "F27",
+       "F28",
+       "F29"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "5. Rule-based screening (WHO cut-offs)",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening (WHO: systolic >= 140 and/or diastolic >= 90 mmHg on two different days) is normal, with latest reading 110/84 on 2021-06-11 below 140/90.",
+      "fact_ids": [
+       "F68"
+      ]
+     },
+     {
+      "text": "Anaemia screening is normal, with haemoglobin 15.7 g/dL at or above 13 g/dL.",
+      "fact_ids": [
+       "F69"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "6. ML screening estimates (not diagnoses)",
+    "sentences": [
+     {
+      "text": "ML screening estimate for type 2 diabetes shows Low risk (probability 0.242, Logistic Regression).",
+      "fact_ids": [
+       "F70"
+      ]
+     },
+     {
+      "text": "SHAP: Raised the risk most: Age (71); Lowered the risk most: Glucose (100.2), BMI (27.8).",
+      "fact_ids": [
+       "F70"
+      ]
+     },
+     {
+      "text": "Model note: Trained on 768 women of Pima heritage aged 21+; less reliable for other groups.",
+      "fact_ids": [
+       "F70"
+      ]
+     },
+     {
+      "text": "Diabetes, Diabetic retinopathy associated with type II diabetes mellitus, Neuropathy due to type 2 diabetes mellitus, Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, Macular edema and retinopathy due to type 2 diabetes mellitus are already documented diagnoses, so this estimate of undiagnosed risk is not meaningful for this patient.",
+      "fact_ids": [
+       "F70"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "7. Missing or unverified information",
+    "sentences": [
+     {
+      "text": "No allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F30"
+      ]
+     },
+     {
+      "text": "ML screening estimate for chronic kidney disease not calculated: Needs Blood Urea, Urine Albumin, Urine Sugar.",
+      "fact_ids": [
+       "F71"
+      ]
+     },
+     {
+      "text": "ML screening estimate for liver disease not calculated: Needs Direct Bilirubin, A/G Ratio.",
+      "fact_ids": [
+       "F72"
+      ]
+     },
+     {
+      "text": "ML screening estimate for heart disease not calculated: Needs Fasting Blood Sugar.",
+      "fact_ids": [
+       "F73"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Source reports",
+    "sentences": [
+     {
+      "text": "Source reports comprise visit records and lab reports from C-R01 to C-R15 dated 1952-04-22 to 2021-06-11.",
+      "fact_ids": [
+       "F02",
+       "F03",
+       "F04",
+       "F05",
+       "F06",
+       "F07",
+       "F08",
+       "F09",
+       "F10",
+       "F11",
+       "F12",
+       "F13",
+       "F14",
+       "F15",
+       "F16"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": []
+}

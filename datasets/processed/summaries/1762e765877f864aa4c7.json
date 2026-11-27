@@ -1,0 +1,275 @@
+{
+ "status": "passed",
+ "attempts": 1,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.4",
+ "summary": {
+  "sections": [
+   {
+    "title": "Patient and records",
+    "sentences": [
+     {
+      "text": "The patient is a 57-year-old female, and the records contain 12 source reports including 4 lab reports dated 1995-08-13 to 2021-11-07.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "1. Documented history",
+    "sentences": [
+     {
+      "text": "Documented diagnosis includes Diabetes active and recorded since 1995-08-13.",
+      "fact_ids": [
+       "F14"
+      ]
+     },
+     {
+      "text": "Documented diagnoses include Hypertriglyceridemia, Metabolic syndrome X, and Hypertension, all active and recorded since 1998-08-16.",
+      "fact_ids": [
+       "F15",
+       "F16",
+       "F17"
+      ]
+     },
+     {
+      "text": "Documented diagnosis includes Diabetic retinopathy associated with type II diabetes mellitus, active and recorded since 1999-08-22.",
+      "fact_ids": [
+       "F18"
+      ]
+     },
+     {
+      "text": "Documented diagnosis includes Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, active and recorded since 2002-09-08.",
+      "fact_ids": [
+       "F19"
+      ]
+     },
+     {
+      "text": "Documented diagnosis includes Neuropathy due to type 2 diabetes mellitus, active and recorded since 2004-09-19.",
+      "fact_ids": [
+       "F20"
+      ]
+     },
+     {
+      "text": "Documented diagnoses include Chronic kidney disease stage 1 and Diabetic renal disease, both active and recorded since 2011-05-29.",
+      "fact_ids": [
+       "F21",
+       "F22"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "2. Laboratory observations (latest values)",
+    "sentences": [
+     {
+      "text": "Synthea gives no reference ranges; typical adult ranges were added for this demonstration.",
+      "fact_ids": [
+       "F60"
+      ]
+     },
+     {
+      "text": "Latest Blood Urea Nitrogen is 20 mg/dL on 2021-11-07, with a reference range of 7-20 mg/dL, which is close to the upper limit.",
+      "fact_ids": [
+       "F29"
+      ]
+     },
+     {
+      "text": "Latest Glucose is 112.3 mg/dL on 2021-11-07, with a reference range of 70-99 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F31"
+      ]
+     },
+     {
+      "text": "Latest LDL Cholesterol is 140.7 mg/dL on 2021-11-07, with a reference range below 100 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F38"
+      ]
+     },
+     {
+      "text": "Latest Serum Creatinine is 2.3 mg/dL on 2021-11-07, with a reference range of 0.6-1.2 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F42"
+      ]
+     },
+     {
+      "text": "Latest Total Cholesterol is 227.6 mg/dL on 2021-11-07, with a reference range below 200 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F46"
+      ]
+     },
+     {
+      "text": "Latest Triglycerides is 157.5 mg/dL on 2021-11-07, with a reference range below 150 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F48"
+      ]
+     },
+     {
+      "text": "Latest eGFR is 32.8 mL/min/1.73m2 on 2021-11-07, with a reference range above 60 mL/min/1.73m2, which is below the reference range.",
+      "fact_ids": [
+       "F52"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "3. Changes over time",
+    "sentences": [
+     {
+      "text": "Blood Urea Nitrogen over the last 3 reports was 18.2 to 18.9 to 20 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, showing a rising, worsening direction.",
+      "fact_ids": [
+       "F30"
+      ]
+     },
+     {
+      "text": "Glucose over the last 3 reports was 104.8 to 107.4 to 112.3 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, showing a rising, worsening direction.",
+      "fact_ids": [
+       "F32"
+      ]
+     },
+     {
+      "text": "LDL Cholesterol over the last 3 reports was 120 to 122.1 to 140.7 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, showing a rising, worsening direction.",
+      "fact_ids": [
+       "F39"
+      ]
+     },
+     {
+      "text": "Serum Creatinine over the last 3 reports was 1.7 to 2.2 to 2.3 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, showing a rising, worsening direction.",
+      "fact_ids": [
+       "F43"
+      ]
+     },
+     {
+      "text": "Total Cholesterol over the last 3 reports was 208.8 to 209 to 227.6 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, showing a rising, worsening direction.",
+      "fact_ids": [
+       "F47"
+      ]
+     },
+     {
+      "text": "eGFR over the last 3 reports was 43.5 to 34.5 to 32.8 mL/min/1.73m2 on 2021-09-05, 2021-10-10, and 2021-11-07, showing a falling, worsening direction.",
+      "fact_ids": [
+       "F53"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "4. Medications and allergies",
+    "sentences": [
+     {
+      "text": "Medications include lisinopril 10 MG Oral Tablet ongoing since 1998-08-16 and Hydrochlorothiazide 25 MG Oral Tablet ongoing since 1998-08-16.",
+      "fact_ids": [
+       "F24",
+       "F25"
+      ]
+     },
+     {
+      "text": "Medication includes insulin human isophane 70 UNT/ML / Regular Insulin Human 30 UNT/ML Injectable Suspension Humulin ongoing since 2011-08-28.",
+      "fact_ids": [
+       "F26"
+      ]
+     },
+     {
+      "text": "No allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F28"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "5. Rule-based screening (WHO cut-offs)",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening is normal, with the latest reading of 132/86 on 2021-11-07 being below 140/90.",
+      "fact_ids": [
+       "F54"
+      ]
+     },
+     {
+      "text": "Anaemia screening is normal, with Haemoglobin of 13.6 g/dL being at or above 12 g/dL.",
+      "fact_ids": [
+       "F55"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "6. ML screening estimates (not diagnoses)",
+    "sentences": [
+     {
+      "text": "ML screening estimate for type 2 diabetes shows low risk with a probability of 0.26 using Logistic Regression.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "SHAP analysis indicates Age 57 raised the risk most, while BMI 28.1 and Glucose 112.3 lowered the risk most.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "The model was trained on 768 women of Pima heritage aged 21 and older, making it less reliable for other groups.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "Since Diabetes, Diabetic retinopathy associated with type II diabetes mellitus, Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, and Neuropathy due to type 2 diabetes mellitus are already documented diagnoses, this estimate of undiagnosed risk is not meaningful for this patient.",
+      "fact_ids": [
+       "F56"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "7. Missing or unverified information",
+    "sentences": [
+     {
+      "text": "ML screening estimate for chronic kidney disease was not calculated because it needs Blood Urea, Urine Albumin, and Urine Sugar.",
+      "fact_ids": [
+       "F57"
+      ]
+     },
+     {
+      "text": "ML screening estimate for liver disease was not calculated because it needs Total Bilirubin, Direct Bilirubin, SGPT, SGOT, Alkaline Phosphatase, Total Protein, Albumin, and A/G Ratio.",
+      "fact_ids": [
+       "F58"
+      ]
+     },
+     {
+      "text": "ML screening estimate for heart disease was not calculated because it needs Fasting Blood Sugar.",
+      "fact_ids": [
+       "F59"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Source reports",
+    "sentences": [
+     {
+      "text": "Source reports include visit records B-R01 to B-R07, B-R09, and lab reports B-R08 and B-R10 to B-R12.",
+      "fact_ids": [
+       "F02",
+       "F03",
+       "F04",
+       "F05",
+       "F06",
+       "F07",
+       "F08",
+       "F09",
+       "F10",
+       "F11",
+       "F12",
+       "F13"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": []
+}

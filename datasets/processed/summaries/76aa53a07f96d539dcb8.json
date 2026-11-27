@@ -1,0 +1,232 @@
+{
+ "status": "passed",
+ "attempts": 1,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.3",
+ "summary": {
+  "sections": [
+   {
+    "title": "Patient and records",
+    "sentences": [
+     {
+      "text": "The patient is a 57-year-old female, with records containing 12 source reports (4 lab reports) dated 1995-08-13 to 2021-11-07.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "1. Documented history",
+    "sentences": [
+     {
+      "text": "Documented diagnosis includes Diabetes, Hypertriglyceridemia, Metabolic syndrome X, Hypertension, Diabetic retinopathy associated with type II diabetes mellitus, Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, Neuropathy due to type 2 diabetes mellitus, Chronic kidney disease stage 1, and Diabetic renal disease.",
+      "fact_ids": [
+       "F14",
+       "F15",
+       "F16",
+       "F17",
+       "F18",
+       "F19",
+       "F20",
+       "F21",
+       "F22"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "2. Laboratory observations (latest values)",
+    "sentences": [
+     {
+      "text": "Synthea gives no reference ranges; typical adult ranges were added for this demonstration.",
+      "fact_ids": [
+       "F60"
+      ]
+     },
+     {
+      "text": "Latest Blood Urea Nitrogen is 20 mg/dL on 2021-11-07 (reference 7-20 mg/dL), close to the upper limit.",
+      "fact_ids": [
+       "F29"
+      ]
+     },
+     {
+      "text": "Latest Glucose is 112.3 mg/dL on 2021-11-07 (reference 70-99 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F31"
+      ]
+     },
+     {
+      "text": "Latest LDL Cholesterol is 140.7 mg/dL on 2021-11-07 (reference below 100 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F38"
+      ]
+     },
+     {
+      "text": "Latest Serum Creatinine is 2.3 mg/dL on 2021-11-07 (reference 0.6-1.2 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F42"
+      ]
+     },
+     {
+      "text": "Latest Total Cholesterol is 227.6 mg/dL on 2021-11-07 (reference below 200 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F46"
+      ]
+     },
+     {
+      "text": "Latest Triglycerides is 157.5 mg/dL on 2021-11-07 (reference below 150 mg/dL), above the reference range.",
+      "fact_ids": [
+       "F48"
+      ]
+     },
+     {
+      "text": "Latest eGFR is 32.8 mL/min/1.73m2 on 2021-11-07 (reference above 60 mL/min/1.73m2), below the reference range.",
+      "fact_ids": [
+       "F52"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "3. Changes over time",
+    "sentences": [
+     {
+      "text": "Blood Urea Nitrogen over the last 3 reports: 18.2 -> 18.9 -> 20 mg/dL (2021-09-05, 2021-10-10, 2021-11-07); direction: rising, worsening.",
+      "fact_ids": [
+       "F30"
+      ]
+     },
+     {
+      "text": "Glucose over the last 3 reports: 104.8 -> 107.4 -> 112.3 mg/dL (2021-09-05, 2021-10-10, 2021-11-07); direction: rising, worsening.",
+      "fact_ids": [
+       "F32"
+      ]
+     },
+     {
+      "text": "LDL Cholesterol over the last 3 reports: 120 -> 122.1 -> 140.7 mg/dL (2021-09-05, 2021-10-10, 2021-11-07); direction: rising, worsening.",
+      "fact_ids": [
+       "F39"
+      ]
+     },
+     {
+      "text": "Serum Creatinine over the last 3 reports: 1.7 -> 2.2 -> 2.3 mg/dL (2021-09-05, 2021-10-10, 2021-11-07); direction: rising, worsening.",
+      "fact_ids": [
+       "F43"
+      ]
+     },
+     {
+      "text": "Total Cholesterol over the last 3 reports: 208.8 -> 209 -> 227.6 mg/dL (2021-09-05, 2021-10-10, 2021-11-07); direction: rising, worsening.",
+      "fact_ids": [
+       "F47"
+      ]
+     },
+     {
+      "text": "eGFR over the last 3 reports: 43.5 -> 34.5 -> 32.8 mL/min/1.73m2 (2021-09-05, 2021-10-10, 2021-11-07); direction: falling, worsening.",
+      "fact_ids": [
+       "F53"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "4. Medications and allergies",
+    "sentences": [
+     {
+      "text": "No allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F28"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "5. Rule-based screening (WHO cut-offs)",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening is normal, and anaemia screening is normal.",
+      "fact_ids": [
+       "F54",
+       "F55"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "6. ML screening estimates (not diagnoses)",
+    "sentences": [
+     {
+      "text": "ML screening estimate for type 2 diabetes shows low risk with a probability of 0.26 via Logistic Regression.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "SHAP analysis indicates Age (57) raised the risk most, while BMI (28.1) and Glucose (112.3) lowered the risk most.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "The model was trained on 768 women of Pima heritage aged 21+, making it less reliable for other groups.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "Because Diabetes, Diabetic retinopathy associated with type II diabetes mellitus, Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, and Neuropathy due to type 2 diabetes mellitus are already documented diagnoses, this estimate of undiagnosed risk is not meaningful for this patient.",
+      "fact_ids": [
+       "F56"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "7. Missing or unverified information",
+    "sentences": [
+     {
+      "text": "ML screening estimate for chronic kidney disease was not calculated because it needs Blood Urea, Urine Albumin, and Urine Sugar.",
+      "fact_ids": [
+       "F57"
+      ]
+     },
+     {
+      "text": "ML screening estimate for liver disease was not calculated because it needs Total Bilirubin, Direct Bilirubin, SGPT, SGOT, Alkaline Phosphatase, Total Protein, Albumin, and A/G Ratio.",
+      "fact_ids": [
+       "F58"
+      ]
+     },
+     {
+      "text": "ML screening estimate for heart disease was not calculated because it needs Fasting Blood Sugar.",
+      "fact_ids": [
+       "F59"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Source reports",
+    "sentences": [
+     {
+      "text": "Source reports include B-R01 through B-R12, covering visit and lab reports from 1995-08-13 to 2021-11-07.",
+      "fact_ids": [
+       "F02",
+       "F03",
+       "F04",
+       "F05",
+       "F06",
+       "F07",
+       "F08",
+       "F09",
+       "F10",
+       "F11",
+       "F12",
+       "F13"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": []
+}

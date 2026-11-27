@@ -1,0 +1,192 @@
+{
+ "status": "passed",
+ "attempts": 1,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.1",
+ "summary": {
+  "sections": [
+   {
+    "title": "About your records",
+    "sentences": [
+     {
+      "text": "Your records list 10 source reports, including 3 lab reports, dated from 1990-11-03 to 2021-03-06.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Health conditions in your records",
+    "sentences": [
+     {
+      "text": "Your records list Chronic sinusitis recorded since 1990-11-02.",
+      "fact_ids": [
+       "F12"
+      ]
+     },
+     {
+      "text": "Your records list Diabetes, Anemia, and Hypertension recorded since 2010-01-02.",
+      "fact_ids": [
+       "F13",
+       "F14",
+       "F15"
+      ]
+     },
+     {
+      "text": "Your records list Hyperglycemia, Hypertriglyceridemia, and Metabolic syndrome X recorded since 2011-01-08.",
+      "fact_ids": [
+       "F16",
+       "F17",
+       "F18"
+      ]
+     },
+     {
+      "text": "Your records list Prediabetes recorded since 2017-11-25.",
+      "fact_ids": [
+       "F19"
+      ]
+     },
+     {
+      "text": "Your records list Acute bronchitis recorded on 2017-11-16, which was resolved by 2017-12-05.",
+      "fact_ids": [
+       "F20"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Test results to look at",
+    "sentences": [
+     {
+      "text": "Your latest Blood Urea Nitrogen was 7.7 mg/dL on 2021-03-06, which is close to the lower limit of the reference range 7-20 mg/dL.",
+      "fact_ids": [
+       "F26"
+      ]
+     },
+     {
+      "text": "Blood Urea Nitrogen over the last 3 reports went 18.1 -> 10.6 -> 7.7 mg/dL on 2019-02-23, 2020-02-29, and 2021-03-06, showing a falling direction towards the side that is not usually a concern for this test.",
+      "fact_ids": [
+       "F27"
+      ]
+     },
+     {
+      "text": "Your latest Glucose was 101.6 mg/dL on 2021-03-06, which is above the reference range 70-99 mg/dL.",
+      "fact_ids": [
+       "F28"
+      ]
+     },
+     {
+      "text": "Glucose over the last 3 reports went 84.4 -> 105.9 -> 101.6 mg/dL on 2019-02-23, 2020-02-29, and 2021-03-06 with a mixed direction.",
+      "fact_ids": [
+       "F29"
+      ]
+     },
+     {
+      "text": "Your latest HbA1c was 7 % on 2021-03-06, which is above the reference range 4-5.6 %.",
+      "fact_ids": [
+       "F32"
+      ]
+     },
+     {
+      "text": "HbA1c over the last 3 reports went 6.5 -> 6.8 -> 7 % on 2019-02-23, 2020-02-29, and 2021-03-06, showing a rising and worsening trend moving away from the reference range.",
+      "fact_ids": [
+       "F33"
+      ]
+     },
+     {
+      "text": "Your latest LDL Cholesterol was 144.5 mg/dL on 2021-03-06, which is above the reference range below 100 mg/dL.",
+      "fact_ids": [
+       "F35"
+      ]
+     },
+     {
+      "text": "LDL Cholesterol over the last 3 reports went 71.5 -> 141.4 -> 144.5 mg/dL on 2019-02-23, 2020-02-29, and 2021-03-06, showing a rising and worsening trend moving away from the reference range.",
+      "fact_ids": [
+       "F36"
+      ]
+     },
+     {
+      "text": "Other test results such as HDL Cholesterol, Potassium, Serum Creatinine, Sodium, Total Cholesterol, Triglycerides, Urine Albumin/Creatinine Ratio, and eGFR were also checked, and many results were within their reference ranges.",
+      "fact_ids": [
+       "F30",
+       "F31",
+       "F37",
+       "F38",
+       "F39",
+       "F40",
+       "F41",
+       "F42",
+       "F43",
+       "F44",
+       "F45",
+       "F46",
+       "F47",
+       "F48",
+       "F49",
+       "F50"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Blood pressure and haemoglobin",
+    "sentences": [
+     {
+      "text": "Your blood-pressure screening showed raised readings on two different days, with 145/101 on 2021-03-06 and 194/100 on 2020-02-29.",
+      "fact_ids": [
+       "F51"
+      ]
+     },
+     {
+      "text": "Your anaemia screening was normal, with a haemoglobin level of 15.6 g/dL on 2020-02-29, which is at or above 13 g/dL.",
+      "fact_ids": [
+       "F34",
+       "F52"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Your medicines and allergies",
+    "sentences": [
+     {
+      "text": "Your records list ongoing medications including amLODIPine 2.5 MG Oral Tablet, 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet, and Hydrochlorothiazide 25 MG Oral Tablet.",
+      "fact_ids": [
+       "F21",
+       "F22",
+       "F23"
+      ]
+     },
+     {
+      "text": "Your records list a past medication containing Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution taken from 2017-11-17 to 2017-12-06.",
+      "fact_ids": [
+       "F24"
+      ]
+     },
+     {
+      "text": "No allergies are recorded in your supplied records.",
+      "fact_ids": [
+       "F25"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Points to discuss with your doctor",
+    "sentences": [
+     {
+      "text": "You can talk with your doctor about your blood pressure measurements and test results like Glucose, HbA1c, and LDL Cholesterol.",
+      "fact_ids": [
+       "F28",
+       "F32",
+       "F35",
+       "F51"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": []
+}

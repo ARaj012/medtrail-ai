@@ -1,0 +1,167 @@
+{
+ "status": "passed",
+ "attempts": 1,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.3",
+ "summary": {
+  "sections": [
+   {
+    "title": "About your records",
+    "sentences": [
+     {
+      "text": "Your records contain 15 source reports including 6 lab reports dated between 1952-04-22 and 2021-06-11, and no allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F01",
+       "F30"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Health conditions in your records",
+    "sentences": [
+     {
+      "text": "Your records list active conditions including diabetes, hypertriglyceridemia, metabolic syndrome X, anemia, diabetic retinopathy associated with type II diabetes mellitus, neuropathy due to type 2 diabetes mellitus, nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, hyperlipidemia, and macular edema and retinopathy due to type 2 diabetes mellitus.",
+      "fact_ids": [
+       "F17",
+       "F18",
+       "F19",
+       "F20",
+       "F21",
+       "F22",
+       "F23",
+       "F24",
+       "F25"
+      ]
+     },
+     {
+      "text": "Your records also list viral sinusitis as a previous diagnosis that was recorded on 2019-10-24 and resolved on 2019-11-16.",
+      "fact_ids": [
+       "F26"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Test results to look at",
+    "sentences": [
+     {
+      "text": "LDL cholesterol (often called 'bad' cholesterol) was 153 mg/dL on 2021-06-11, which is above the usual range of below 100 mg/dL, and over the last 3 reports between 2020-06-05 and 2021-06-11 it went from 128.5 mg/dL to 126.3 mg/dL and then 153 mg/dL.",
+      "fact_ids": [
+       "F44",
+       "F45"
+      ]
+     },
+     {
+      "text": "SGPT (a liver enzyme) was 59.6 U/L on 2021-04-15, which is above the usual range of 7-40 U/L, and over the last 3 reports between 2019-04-16 and 2021-04-15 it went from 24.4 U/L to 34.7 U/L and then 59.6 U/L.",
+      "fact_ids": [
+       "F50",
+       "F51"
+      ]
+     },
+     {
+      "text": "Triglycerides (a type of blood fat) was 196.5 mg/dL on 2021-06-11, which is above the usual range of below 150 mg/dL, and over the last 3 reports between 2020-06-05 and 2021-06-11 it went from 187.6 mg/dL to 131.4 mg/dL and then 196.5 mg/dL.",
+      "fact_ids": [
+       "F62",
+       "F63"
+      ]
+     },
+     {
+      "text": "HbA1c (average blood sugar over the last few months) was 7 % on 2021-06-11, which is above the usual range of 4-5.6 %, and over the last 3 reports between 2019-11-08 and 2021-06-11 it stayed at 7 % to 7 % and then 7 %.",
+      "fact_ids": [
+       "F41",
+       "F42"
+      ]
+     },
+     {
+      "text": "Total cholesterol was 237.5 mg/dL on 2021-06-11, which is above the usual range of below 200 mg/dL, and over the last 3 reports between 2020-06-05 and 2021-06-11 it went from 213.7 mg/dL to 173.4 mg/dL and then 237.5 mg/dL.",
+      "fact_ids": [
+       "F58",
+       "F59"
+      ]
+     },
+     {
+      "text": "Blood sugar (glucose) was 100.2 mg/dL on 2021-06-11, which is above the usual range of 70-99 mg/dL, and over the last 3 reports between 2020-06-05 and 2021-06-11 it went from 105.7 mg/dL to 109.1 mg/dL and then 100.2 mg/dL.",
+      "fact_ids": [
+       "F37",
+       "F38"
+      ]
+     },
+     {
+      "text": "The rest of the test results in your records did not raise an alert.",
+      "fact_ids": [
+       "F31",
+       "F33",
+       "F35",
+       "F39",
+       "F43",
+       "F46",
+       "F48",
+       "F52",
+       "F54",
+       "F56",
+       "F60",
+       "F64",
+       "F66"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Blood pressure and haemoglobin",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening is normal, with the latest reading of 110/84 on 2021-06-11 being below 140/90.",
+      "fact_ids": [
+       "F68"
+      ]
+     },
+     {
+      "text": "Anaemia screening is normal, and your haemoglobin of 15.7 g/dL is at or above 13 g/dL.",
+      "fact_ids": [
+       "F69"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Your medicines and allergies",
+    "sentences": [
+     {
+      "text": "Your records list ongoing medications including Simvastatin 10 MG Oral Tablet since 2008-04-18, Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler since 1952-04-22, and Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler since 1952-04-22.",
+      "fact_ids": [
+       "F27",
+       "F28",
+       "F29"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Points to discuss with your doctor",
+    "sentences": [
+     {
+      "text": "You may want to ask your doctor about your LDL cholesterol, SGPT, triglycerides, HbA1c, total cholesterol, and blood sugar results.",
+      "fact_ids": [
+       "F37",
+       "F41",
+       "F44",
+       "F50",
+       "F58",
+       "F62"
+      ]
+     },
+     {
+      "text": "You can also discuss your ongoing conditions and how to monitor your overall wellness during your visits.",
+      "fact_ids": [
+       "F17",
+       "F18",
+       "F24"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": []
+}

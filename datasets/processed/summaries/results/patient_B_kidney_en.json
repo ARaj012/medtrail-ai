@@ -1,0 +1,457 @@
+{
+ "patient_id": "SYN-B",
+ "language": "en",
+ "patient_summary": "ABOUT YOUR RECORDS\n- The patient is a 57-year-old female, and your records contain 12 source reports dated between 1995-08-13 and 2021-11-07. [B-R01, B-R12]\n\nHEALTH CONDITIONS IN YOUR RECORDS\n- Your records list active conditions including diabetes, hypertriglyceridemia, metabolic syndrome X, hypertension, diabetic retinopathy associated with type II diabetes mellitus, nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, neuropathy due to type 2 diabetes mellitus, chronic kidney disease stage 1, and diabetic renal disease. [B-R01, B-R02, B-R03, B-R04, B-R05, B-R06]\n\nTEST RESULTS TO LOOK AT\n- For creatinine (a kidney test), the latest value was 2.3 mg/dL on 2021-11-07, which is above the usual range of 0.6-1.2 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 1.7 to 2.2 and then 2.3 mg/dL. [B-R10, B-R11, B-R12]\n- For eGFR (how well the kidneys filter blood), the latest value was 32.8 mL/min/1.73m2 on 2021-11-07, which is below the usual range of above 60 mL/min/1.73m2, and between 2021-09-05 and 2021-11-07 it went down from 43.5 to 34.5 and then 32.8 mL/min/1.73m2. [B-R10, B-R11, B-R12]\n- For LDL cholesterol (often called 'bad' cholesterol), the latest value was 140.7 mg/dL on 2021-11-07, which is above the usual range of below 100 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 120 to 122.1 and then 140.7 mg/dL. [B-R10, B-R11, B-R12]\n- For total cholesterol, the latest value was 227.6 mg/dL on 2021-11-07, which is above the usual range of below 200 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 208.8 to 209 and then 227.6 mg/dL. [B-R10, B-R11, B-R12]\n- For blood sugar (glucose), the latest value was 112.3 mg/dL on 2021-11-07, which is above the usual range of 70-99 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 104.8 to 107.4 and then 112.3 mg/dL. [B-R10, B-R11, B-R12]\n- For triglycerides (a type of blood fat), the latest value was 157.5 mg/dL on 2021-11-07, which is above the usual range of below 150 mg/dL, and between 2021-09-05 and 2021-11-07 it went from 171.1 to 178.9 and then 157.5 mg/dL. [B-R10, B-R11, B-R12]\n- The other test results did not raise an alert. [B-R08, B-R12]\n\nBLOOD PRESSURE AND HAEMOGLOBIN\n- Blood-pressure screening was normal, with the latest reading being 132/86 on 2021-11-07, which is below 140/90. [B-R11, B-R12]\n- Anaemia screening was also normal, showing a haemoglobin level of 13.6 g/dL on 2018-10-21, which is at or above 12 g/dL. [B-R08]\n\nYOUR MEDICINES AND ALLERGIES\n- Your ongoing medications include lisinopril 10 MG Oral Tablet, Hydrochlorothiazide 25 MG Oral Tablet, and insulin human isophane 70 UNT/ML / Regular Insulin Human 30 UNT/ML Injectable Suspension [Humulin]. [B-R02, B-R07]\n- No allergies are recorded in the supplied records.\n\nPOINTS TO DISCUSS WITH YOUR DOCTOR\n- You can talk with your doctor about your kidney health test trends, your blood sugar levels, and your cholesterol numbers. [B-R10, B-R11, B-R12]\n\nThis summary only repeats what is in your records. It is not a diagnosis. Please talk to your doctor before changing any medicine.",
+ "doctor_summary": "PATIENT AND RECORDS\n- The patient is a 57-year-old female, and the records contain 12 source reports including 4 lab reports dated 1995-08-13 to 2021-11-07. [B-R01, B-R12]\n\n1. DOCUMENTED HISTORY\n- Documented diagnosis includes Diabetes active and recorded since 1995-08-13. [B-R01]\n- Documented diagnoses also include Hypertriglyceridemia, Metabolic syndrome X, and Hypertension, all active and recorded since 1998-08-16. [B-R02]\n- Documented diagnoses include Diabetic retinopathy associated with type II diabetes mellitus recorded since 1999-08-22, and Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus recorded since 2002-09-08. [B-R03, B-R04]\n- Documented diagnoses include Neuropathy due to type 2 diabetes mellitus recorded since 2004-09-19, as well as Chronic kidney disease stage 1 and Diabetic renal disease recorded since 2011-05-29. [B-R05, B-R06]\n\n2. LABORATORY OBSERVATIONS (LATEST VALUES)\n- Synthea gives no reference ranges; typical adult ranges were added for this demonstration.\n- Latest Blood Urea Nitrogen is 20 mg/dL on 2021-11-07 with a reference of 7-20 mg/dL, which is close to the upper limit. [B-R12]\n- Latest Glucose is 112.3 mg/dL on 2021-11-07 with a reference of 70-99 mg/dL, which is above the reference range. [B-R12]\n- Latest LDL Cholesterol is 140.7 mg/dL on 2021-11-07 with a reference below 100 mg/dL, which is above the reference range. [B-R12]\n- Latest Serum Creatinine is 2.3 mg/dL on 2021-11-07 with a reference of 0.6-1.2 mg/dL, which is above the reference range. [B-R12]\n- Latest Total Cholesterol is 227.6 mg/dL on 2021-11-07 with a reference below 200 mg/dL, which is above the reference range. [B-R12]\n- Latest Triglycerides is 157.5 mg/dL on 2021-11-07 with a reference below 150 mg/dL, which is above the reference range. [B-R12]\n- Latest eGFR is 32.8 mL/min/1.73m2 on 2021-11-07 with a reference above 60 mL/min/1.73m2, which is below the reference range. [B-R12]\n\n3. CHANGES OVER TIME\n- Blood Urea Nitrogen over the last 3 reports is 18.2 -> 18.9 -> 20 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction. [B-R10, B-R11, B-R12]\n- Glucose over the last 3 reports is 104.8 -> 107.4 -> 112.3 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction. [B-R10, B-R11, B-R12]\n- LDL Cholesterol over the last 3 reports is 120 -> 122.1 -> 140.7 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction. [B-R10, B-R11, B-R12]\n- Serum Creatinine over the last 3 reports is 1.7 -> 2.2 -> 2.3 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction. [B-R10, B-R11, B-R12]\n- Total Cholesterol over the last 3 reports is 208.8 -> 209 -> 227.6 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction. [B-R10, B-R11, B-R12]\n- eGFR over the last 3 reports is 43.5 -> 34.5 -> 32.8 mL/min/1.73m2 on 2021-09-05, 2021-10-10, and 2021-11-07, with a falling and worsening direction. [B-R10, B-R11, B-R12]\n\n4. MEDICATIONS AND ALLERGIES\n- Medication includes lisinopril 10 MG Oral Tablet ongoing since 1998-08-16. [B-R02]\n- Medication includes Hydrochlorothiazide 25 MG Oral Tablet ongoing since 1998-08-16. [B-R02]\n- Medication includes insulin human isophane 70 UNT/ML / Regular Insulin Human 30 UNT/ML Injectable Suspension [Humulin] ongoing since 2011-08-28. [B-R07]\n- No allergies are recorded in the supplied records.\n\n5. RULE-BASED SCREENING (WHO CUT-OFFS)\n- Blood-pressure screening is normal with the latest reading 132/86 on 2021-11-07 below 140/90. [B-R11, B-R12]\n- Anaemia screening is normal with haemoglobin 13.6 g/dL at or above 12 g/dL. [B-R08]\n\n6. ML SCREENING ESTIMATES (NOT DIAGNOSES)\n- ML screening estimate for type 2 diabetes shows low risk with a probability of 0.26 using Logistic Regression. [B-R01, B-R03, B-R04, B-R05, B-R12]\n- SHAP analysis indicates Age 57 raised the risk most, while BMI 28.1 and Glucose 112.3 lowered the risk most. [B-R01, B-R03, B-R04, B-R05, B-R12]\n- The model was trained on 768 women of Pima heritage aged 21+, making it less reliable for other groups. [B-R01, B-R03, B-R04, B-R05, B-R12]\n- Because Diabetes, Diabetic retinopathy associated with type II diabetes mellitus, Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, and Neuropathy due to type 2 diabetes mellitus are already documented diagnoses, this estimate of undiagnosed risk is not meaningful for this patient. [B-R01, B-R03, B-R04, B-R05, B-R12]\n\n7. MISSING OR UNVERIFIED INFORMATION\n- ML screening estimate for chronic kidney disease is not calculated because it needs Blood Urea, Urine Albumin, and Urine Sugar.\n- ML screening estimate for liver disease is not calculated because it needs Total Bilirubin, Direct Bilirubin, SGPT, SGOT, Alkaline Phosphatase, Total Protein, Albumin, and A/G Ratio.\n- ML screening estimate for heart disease is not calculated because it needs Fasting Blood Sugar.\n\nSOURCE REPORTS\n- Source reports include B-R01, B-R02, B-R03, B-R04, B-R05, B-R06, B-R07, B-R08, B-R09, B-R10, B-R11, and B-R12. [B-R01, B-R02, B-R03, B-R04, B-R05, B-R06, B-R07, B-R08, B-R09, B-R10, B-R11, B-R12]\n\nGenerated from the supplied records only. ML results are screening estimates from small public datasets, not diagnoses. Clinical judgement is required.",
+ "patient_summary_sections": {
+  "sections": [
+   {
+    "title": "About your records",
+    "sentences": [
+     {
+      "text": "The patient is a 57-year-old female, and your records contain 12 source reports dated between 1995-08-13 and 2021-11-07.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Health conditions in your records",
+    "sentences": [
+     {
+      "text": "Your records list active conditions including diabetes, hypertriglyceridemia, metabolic syndrome X, hypertension, diabetic retinopathy associated with type II diabetes mellitus, nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, neuropathy due to type 2 diabetes mellitus, chronic kidney disease stage 1, and diabetic renal disease.",
+      "fact_ids": [
+       "F14",
+       "F15",
+       "F16",
+       "F17",
+       "F18",
+       "F19",
+       "F20",
+       "F21",
+       "F22"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Test results to look at",
+    "sentences": [
+     {
+      "text": "For creatinine (a kidney test), the latest value was 2.3 mg/dL on 2021-11-07, which is above the usual range of 0.6-1.2 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 1.7 to 2.2 and then 2.3 mg/dL.",
+      "fact_ids": [
+       "F42",
+       "F43"
+      ]
+     },
+     {
+      "text": "For eGFR (how well the kidneys filter blood), the latest value was 32.8 mL/min/1.73m2 on 2021-11-07, which is below the usual range of above 60 mL/min/1.73m2, and between 2021-09-05 and 2021-11-07 it went down from 43.5 to 34.5 and then 32.8 mL/min/1.73m2.",
+      "fact_ids": [
+       "F52",
+       "F53"
+      ]
+     },
+     {
+      "text": "For LDL cholesterol (often called 'bad' cholesterol), the latest value was 140.7 mg/dL on 2021-11-07, which is above the usual range of below 100 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 120 to 122.1 and then 140.7 mg/dL.",
+      "fact_ids": [
+       "F38",
+       "F39"
+      ]
+     },
+     {
+      "text": "For total cholesterol, the latest value was 227.6 mg/dL on 2021-11-07, which is above the usual range of below 200 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 208.8 to 209 and then 227.6 mg/dL.",
+      "fact_ids": [
+       "F46",
+       "F47"
+      ]
+     },
+     {
+      "text": "For blood sugar (glucose), the latest value was 112.3 mg/dL on 2021-11-07, which is above the usual range of 70-99 mg/dL, and between 2021-09-05 and 2021-11-07 it went up from 104.8 to 107.4 and then 112.3 mg/dL.",
+      "fact_ids": [
+       "F31",
+       "F32"
+      ]
+     },
+     {
+      "text": "For triglycerides (a type of blood fat), the latest value was 157.5 mg/dL on 2021-11-07, which is above the usual range of below 150 mg/dL, and between 2021-09-05 and 2021-11-07 it went from 171.1 to 178.9 and then 157.5 mg/dL.",
+      "fact_ids": [
+       "F48",
+       "F49"
+      ]
+     },
+     {
+      "text": "The other test results did not raise an alert.",
+      "fact_ids": [
+       "F33",
+       "F35",
+       "F37",
+       "F40",
+       "F44",
+       "F50"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Blood pressure and haemoglobin",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening was normal, with the latest reading being 132/86 on 2021-11-07, which is below 140/90.",
+      "fact_ids": [
+       "F54"
+      ]
+     },
+     {
+      "text": "Anaemia screening was also normal, showing a haemoglobin level of 13.6 g/dL on 2018-10-21, which is at or above 12 g/dL.",
+      "fact_ids": [
+       "F37",
+       "F55"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Your medicines and allergies",
+    "sentences": [
+     {
+      "text": "Your ongoing medications include lisinopril 10 MG Oral Tablet, Hydrochlorothiazide 25 MG Oral Tablet, and insulin human isophane 70 UNT/ML / Regular Insulin Human 30 UNT/ML Injectable Suspension [Humulin].",
+      "fact_ids": [
+       "F24",
+       "F25",
+       "F26"
+      ]
+     },
+     {
+      "text": "No allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F28"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Points to discuss with your doctor",
+    "sentences": [
+     {
+      "text": "You can talk with your doctor about your kidney health test trends, your blood sugar levels, and your cholesterol numbers.",
+      "fact_ids": [
+       "F31",
+       "F32",
+       "F38",
+       "F39",
+       "F42",
+       "F43",
+       "F46",
+       "F47",
+       "F52",
+       "F53"
+      ]
+     }
+    ]
+   }
+  ],
+  "disclaimer": "This summary only repeats what is in your records. It is not a diagnosis. Please talk to your doctor before changing any medicine."
+ },
+ "doctor_summary_sections": {
+  "sections": [
+   {
+    "title": "Patient and records",
+    "sentences": [
+     {
+      "text": "The patient is a 57-year-old female, and the records contain 12 source reports including 4 lab reports dated 1995-08-13 to 2021-11-07.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "1. Documented history",
+    "sentences": [
+     {
+      "text": "Documented diagnosis includes Diabetes active and recorded since 1995-08-13.",
+      "fact_ids": [
+       "F14"
+      ]
+     },
+     {
+      "text": "Documented diagnoses also include Hypertriglyceridemia, Metabolic syndrome X, and Hypertension, all active and recorded since 1998-08-16.",
+      "fact_ids": [
+       "F15",
+       "F16",
+       "F17"
+      ]
+     },
+     {
+      "text": "Documented diagnoses include Diabetic retinopathy associated with type II diabetes mellitus recorded since 1999-08-22, and Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus recorded since 2002-09-08.",
+      "fact_ids": [
+       "F18",
+       "F19"
+      ]
+     },
+     {
+      "text": "Documented diagnoses include Neuropathy due to type 2 diabetes mellitus recorded since 2004-09-19, as well as Chronic kidney disease stage 1 and Diabetic renal disease recorded since 2011-05-29.",
+      "fact_ids": [
+       "F20",
+       "F21",
+       "F22"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "2. Laboratory observations (latest values)",
+    "sentences": [
+     {
+      "text": "Synthea gives no reference ranges; typical adult ranges were added for this demonstration.",
+      "fact_ids": [
+       "F60"
+      ]
+     },
+     {
+      "text": "Latest Blood Urea Nitrogen is 20 mg/dL on 2021-11-07 with a reference of 7-20 mg/dL, which is close to the upper limit.",
+      "fact_ids": [
+       "F29"
+      ]
+     },
+     {
+      "text": "Latest Glucose is 112.3 mg/dL on 2021-11-07 with a reference of 70-99 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F31"
+      ]
+     },
+     {
+      "text": "Latest LDL Cholesterol is 140.7 mg/dL on 2021-11-07 with a reference below 100 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F38"
+      ]
+     },
+     {
+      "text": "Latest Serum Creatinine is 2.3 mg/dL on 2021-11-07 with a reference of 0.6-1.2 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F42"
+      ]
+     },
+     {
+      "text": "Latest Total Cholesterol is 227.6 mg/dL on 2021-11-07 with a reference below 200 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F46"
+      ]
+     },
+     {
+      "text": "Latest Triglycerides is 157.5 mg/dL on 2021-11-07 with a reference below 150 mg/dL, which is above the reference range.",
+      "fact_ids": [
+       "F48"
+      ]
+     },
+     {
+      "text": "Latest eGFR is 32.8 mL/min/1.73m2 on 2021-11-07 with a reference above 60 mL/min/1.73m2, which is below the reference range.",
+      "fact_ids": [
+       "F52"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "3. Changes over time",
+    "sentences": [
+     {
+      "text": "Blood Urea Nitrogen over the last 3 reports is 18.2 -> 18.9 -> 20 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction.",
+      "fact_ids": [
+       "F30"
+      ]
+     },
+     {
+      "text": "Glucose over the last 3 reports is 104.8 -> 107.4 -> 112.3 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction.",
+      "fact_ids": [
+       "F32"
+      ]
+     },
+     {
+      "text": "LDL Cholesterol over the last 3 reports is 120 -> 122.1 -> 140.7 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction.",
+      "fact_ids": [
+       "F39"
+      ]
+     },
+     {
+      "text": "Serum Creatinine over the last 3 reports is 1.7 -> 2.2 -> 2.3 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction.",
+      "fact_ids": [
+       "F43"
+      ]
+     },
+     {
+      "text": "Total Cholesterol over the last 3 reports is 208.8 -> 209 -> 227.6 mg/dL on 2021-09-05, 2021-10-10, and 2021-11-07, with a rising and worsening direction.",
+      "fact_ids": [
+       "F47"
+      ]
+     },
+     {
+      "text": "eGFR over the last 3 reports is 43.5 -> 34.5 -> 32.8 mL/min/1.73m2 on 2021-09-05, 2021-10-10, and 2021-11-07, with a falling and worsening direction.",
+      "fact_ids": [
+       "F53"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "4. Medications and allergies",
+    "sentences": [
+     {
+      "text": "Medication includes lisinopril 10 MG Oral Tablet ongoing since 1998-08-16.",
+      "fact_ids": [
+       "F24"
+      ]
+     },
+     {
+      "text": "Medication includes Hydrochlorothiazide 25 MG Oral Tablet ongoing since 1998-08-16.",
+      "fact_ids": [
+       "F25"
+      ]
+     },
+     {
+      "text": "Medication includes insulin human isophane 70 UNT/ML / Regular Insulin Human 30 UNT/ML Injectable Suspension [Humulin] ongoing since 2011-08-28.",
+      "fact_ids": [
+       "F26"
+      ]
+     },
+     {
+      "text": "No allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F28"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "5. Rule-based screening (WHO cut-offs)",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening is normal with the latest reading 132/86 on 2021-11-07 below 140/90.",
+      "fact_ids": [
+       "F54"
+      ]
+     },
+     {
+      "text": "Anaemia screening is normal with haemoglobin 13.6 g/dL at or above 12 g/dL.",
+      "fact_ids": [
+       "F55"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "6. ML screening estimates (not diagnoses)",
+    "sentences": [
+     {
+      "text": "ML screening estimate for type 2 diabetes shows low risk with a probability of 0.26 using Logistic Regression.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "SHAP analysis indicates Age 57 raised the risk most, while BMI 28.1 and Glucose 112.3 lowered the risk most.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "The model was trained on 768 women of Pima heritage aged 21+, making it less reliable for other groups.",
+      "fact_ids": [
+       "F56"
+      ]
+     },
+     {
+      "text": "Because Diabetes, Diabetic retinopathy associated with type II diabetes mellitus, Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, and Neuropathy due to type 2 diabetes mellitus are already documented diagnoses, this estimate of undiagnosed risk is not meaningful for this patient.",
+      "fact_ids": [
+       "F56"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "7. Missing or unverified information",
+    "sentences": [
+     {
+      "text": "ML screening estimate for chronic kidney disease is not calculated because it needs Blood Urea, Urine Albumin, and Urine Sugar.",
+      "fact_ids": [
+       "F57"
+      ]
+     },
+     {
+      "text": "ML screening estimate for liver disease is not calculated because it needs Total Bilirubin, Direct Bilirubin, SGPT, SGOT, Alkaline Phosphatase, Total Protein, Albumin, and A/G Ratio.",
+      "fact_ids": [
+       "F58"
+      ]
+     },
+     {
+      "text": "ML screening estimate for heart disease is not calculated because it needs Fasting Blood Sugar.",
+      "fact_ids": [
+       "F59"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Source reports",
+    "sentences": [
+     {
+      "text": "Source reports include B-R01, B-R02, B-R03, B-R04, B-R05, B-R06, B-R07, B-R08, B-R09, B-R10, B-R11, and B-R12.",
+      "fact_ids": [
+       "F02",
+       "F03",
+       "F04",
+       "F05",
+       "F06",
+       "F07",
+       "F08",
+       "F09",
+       "F10",
+       "F11",
+       "F12",
+       "F13"
+      ]
+     }
+    ]
+   }
+  ],
+  "disclaimer": "Generated from the supplied records only. ML results are screening estimates from small public datasets, not diagnoses. Clinical judgement is required."
+ },
+ "source_report_ids": [
+  "B-R01",
+  "B-R02",
+  "B-R03",
+  "B-R04",
+  "B-R05",
+  "B-R06",
+  "B-R07",
+  "B-R08",
+  "B-R09",
+  "B-R10",
+  "B-R11",
+  "B-R12"
+ ],
+ "grounding_status": "passed",
+ "grounding_details": {
+  "patient": {
+   "method": "gemini",
+   "status": "passed",
+   "model": "gemini-3.5-flash-lite",
+   "attempts": 1,
+   "from_cache": true,
+   "sentences": 14,
+   "supported": 14,
+   "problems_before_retry": []
+  },
+  "doctor": {
+   "method": "gemini",
+   "status": "passed",
+   "model": "gemini-3.5-flash-lite",
+   "attempts": 1,
+   "from_cache": true,
+   "sentences": 33,
+   "supported": 33,
+   "problems_before_retry": []
+  }
+ }
+}

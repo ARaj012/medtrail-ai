@@ -1,0 +1,329 @@
+{
+ "status": "passed_after_retry",
+ "attempts": 2,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.4",
+ "summary": {
+  "sections": [
+   {
+    "title": "Patient and records",
+    "sentences": [
+     {
+      "text": "The patient is a 51-year-old male, and the records contain 10 source reports including 3 lab reports dated from 1990-11-03 to 2021-03-06.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "1. Documented history",
+    "sentences": [
+     {
+      "text": "Documented diagnosis of chronic sinusitis active since 1990-11-02.",
+      "fact_ids": [
+       "F12"
+      ]
+     },
+     {
+      "text": "Documented diagnoses of diabetes, anemia, and hypertension, all active since 2010-01-02.",
+      "fact_ids": [
+       "F13",
+       "F14",
+       "F15"
+      ]
+     },
+     {
+      "text": "Documented diagnoses of hyperglycemia, hypertriglyceridemia, and metabolic syndrome X, all active since 2011-01-08.",
+      "fact_ids": [
+       "F16",
+       "F17",
+       "F18"
+      ]
+     },
+     {
+      "text": "Documented diagnosis of prediabetes active since 2017-11-25.",
+      "fact_ids": [
+       "F19"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "2. Laboratory observations (latest values)",
+    "sentences": [
+     {
+      "text": "Synthea gives no reference ranges; typical adult ranges were added for this demonstration.",
+      "fact_ids": [
+       "F57"
+      ]
+     },
+     {
+      "text": "Latest Blood Urea Nitrogen is 7.7 mg/dL on 2021-03-06 with a reference range of 7-20 mg/dL, close to the lower limit.",
+      "fact_ids": [
+       "F26"
+      ]
+     },
+     {
+      "text": "Latest Glucose is 101.6 mg/dL on 2021-03-06 with a reference range of 70-99 mg/dL, above the reference range.",
+      "fact_ids": [
+       "F28"
+      ]
+     },
+     {
+      "text": "Latest HDL Cholesterol is 48.2 mg/dL on 2021-03-06 with a reference above 40 mg/dL, within the reference range.",
+      "fact_ids": [
+       "F30"
+      ]
+     },
+     {
+      "text": "Latest HbA1c is 7 % on 2021-03-06 with a reference range of 4-5.6 %, above the reference range.",
+      "fact_ids": [
+       "F32"
+      ]
+     },
+     {
+      "text": "Latest Hemoglobin is 15.6 g/dL on 2020-02-29 with a reference range of 13.5-17.5 g/dL, within the reference range.",
+      "fact_ids": [
+       "F34"
+      ]
+     },
+     {
+      "text": "Latest LDL Cholesterol is 144.5 mg/dL on 2021-03-06 with a reference below 100 mg/dL, above the reference range.",
+      "fact_ids": [
+       "F35"
+      ]
+     },
+     {
+      "text": "Latest Potassium is 4.9 mmol/L on 2021-03-06 with a reference range of 3.5-5.1 mmol/L, within the reference range.",
+      "fact_ids": [
+       "F37"
+      ]
+     },
+     {
+      "text": "Latest Serum Creatinine is 1.3 mg/dL on 2021-03-06 with a reference range of 0.6-1.2 mg/dL, above the reference range.",
+      "fact_ids": [
+       "F39"
+      ]
+     },
+     {
+      "text": "Latest Sodium is 141.1 mmol/L on 2021-03-06 with a reference range of 135-145 mmol/L, within the reference range.",
+      "fact_ids": [
+       "F41"
+      ]
+     },
+     {
+      "text": "Latest Total Cholesterol is 231.5 mg/dL on 2021-03-06 with a reference below 200 mg/dL, above the reference range.",
+      "fact_ids": [
+       "F43"
+      ]
+     },
+     {
+      "text": "Latest Triglycerides is 193.8 mg/dL on 2021-03-06 with a reference below 150 mg/dL, above the reference range.",
+      "fact_ids": [
+       "F45"
+      ]
+     },
+     {
+      "text": "Latest Urine Albumin/Creatinine Ratio is 11.5 mg/g on 2021-03-06 with a reference below 30 mg/g, within the reference range.",
+      "fact_ids": [
+       "F47"
+      ]
+     },
+     {
+      "text": "Latest eGFR is 131.1 mL/min/1.73m2 on 2021-03-06 with a reference above 60 mL/min/1.73m2, within the reference range.",
+      "fact_ids": [
+       "F49"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "3. Changes over time",
+    "sentences": [
+     {
+      "text": "Blood Urea Nitrogen over the last 3 reports: 18.1 -> 10.6 -> 7.7 mg/dL on dates 2019-02-23, 2020-02-29, and 2021-03-06 with direction falling towards the side that is not usually a concern for this test.",
+      "fact_ids": [
+       "F27"
+      ]
+     },
+     {
+      "text": "Glucose over the last 3 reports: 84.4 -> 105.9 -> 101.6 mg/dL on dates 2019-02-23, 2020-02-29, and 2021-03-06 with mixed direction.",
+      "fact_ids": [
+       "F29"
+      ]
+     },
+     {
+      "text": "HDL Cholesterol over the last 3 reports: 76.3 -> 52.3 -> 48.2 mg/dL on dates 2019-02-23, 2020-02-29, and 2021-03-06 with falling direction.",
+      "fact_ids": [
+       "F31"
+      ]
+     },
+     {
+      "text": "HbA1c over the last 3 reports: 6.5 -> 6.8 -> 7 % on dates 2019-02-23, 2020-02-29, and 2021-03-06 with rising, worsening direction moving away from the reference range.",
+      "fact_ids": [
+       "F33"
+      ]
+     },
+     {
+      "text": "LDL Cholesterol over the last 3 reports: 71.5 -> 141.4 -> 144.5 mg/dL on dates 2019-02-23, 2020-02-29, and 2021-03-06 with rising, worsening direction moving away from the reference range.",
+      "fact_ids": [
+       "F36"
+      ]
+     },
+     {
+      "text": "Potassium over the last 3 reports: 4.3 -> 4.8 -> 4.9 mmol/L on dates 2019-02-23, 2020-02-29, and 2021-03-06 with rising direction.",
+      "fact_ids": [
+       "F38"
+      ]
+     },
+     {
+      "text": "Serum Creatinine over the last 3 reports: 1.2 -> 1.2 -> 1.3 mg/dL on dates 2019-02-23, 2020-02-29, and 2021-03-06 with mixed direction.",
+      "fact_ids": [
+       "F40"
+      ]
+     },
+     {
+      "text": "Sodium over the last 3 reports: 141.4 -> 142.1 -> 141.1 mmol/L on dates 2019-02-23, 2020-02-29, and 2021-03-06 with stable direction.",
+      "fact_ids": [
+       "F42"
+      ]
+     },
+     {
+      "text": "Total Cholesterol over the last 3 reports: 169.4 -> 233.2 -> 231.5 mg/dL on dates 2019-02-23, 2020-02-29, and 2021-03-06 with mixed direction.",
+      "fact_ids": [
+       "F44"
+      ]
+     },
+     {
+      "text": "Triglycerides over the last 3 reports: 108.5 -> 197.8 -> 193.8 mg/dL on dates 2019-02-23, 2020-02-29, and 2021-03-06 with mixed direction.",
+      "fact_ids": [
+       "F46"
+      ]
+     },
+     {
+      "text": "Urine Albumin/Creatinine Ratio over the last 3 reports: 5.2 -> 9.9 -> 11.5 mg/g on dates 2019-02-23, 2020-02-29, and 2021-03-06 with rising direction.",
+      "fact_ids": [
+       "F48"
+      ]
+     },
+     {
+      "text": "eGFR over the last 3 reports: 104.7 -> 100.2 -> 131.1 mL/min/1.73m2 on dates 2019-02-23, 2020-02-29, and 2021-03-06 with mixed direction.",
+      "fact_ids": [
+       "F50"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "4. Medications and allergies",
+    "sentences": [
+     {
+      "text": "Ongoing medications include amLODIPine 2.5 MG Oral Tablet since 2010-01-02, 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet since 2010-01-02, and Hydrochlorothiazide 25 MG Oral Tablet since 2010-02-01.",
+      "fact_ids": [
+       "F21",
+       "F22",
+       "F23"
+      ]
+     },
+     {
+      "text": "No allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F25"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "5. Rule-based screening (WHO cut-offs)",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening flagged as raised on two different days with values 145/101 on 2021-03-06 and 194/100 on 2020-02-29.",
+      "fact_ids": [
+       "F51"
+      ]
+     },
+     {
+      "text": "Anaemia screening is normal with hemoglobin 15.6 g/dL at or above 13 g/dL.",
+      "fact_ids": [
+       "F52"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "6. ML screening estimates (not diagnoses)",
+    "sentences": [
+     {
+      "text": "ML screening estimate for type 2 diabetes shows low risk with a probability of 0.255 using Logistic Regression.",
+      "fact_ids": [
+       "F53"
+      ]
+     },
+     {
+      "text": "SHAP analysis indicates age (51) and BMI (33.8) raised the risk most, while glucose (101.6) and diastolic BP (101) lowered the risk most.",
+      "fact_ids": [
+       "F53"
+      ]
+     },
+     {
+      "text": "Model note states it was trained on 768 women of Pima heritage aged 21+ and is less reliable for other groups, and since diabetes is already a documented diagnosis, this estimate of undiagnosed risk is not meaningful for this patient.",
+      "fact_ids": [
+       "F53"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "7. Missing or unverified information",
+    "sentences": [
+     {
+      "text": "ML screening estimate for chronic kidney disease was not calculated because it needs Blood Urea, Urine Albumin, and Urine Sugar.",
+      "fact_ids": [
+       "F54"
+      ]
+     },
+     {
+      "text": "ML screening estimate for liver disease was not calculated because it needs Total Bilirubin, Direct Bilirubin, SGPT, SGOT, Alkaline Phosphatase, Total Protein, Albumin, and A/G Ratio.",
+      "fact_ids": [
+       "F55"
+      ]
+     },
+     {
+      "text": "ML screening estimate for heart disease was not calculated because it needs Fasting Blood Sugar.",
+      "fact_ids": [
+       "F56"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Source reports",
+    "sentences": [
+     {
+      "text": "Source reports include A-R01, A-R02, A-R03, A-R04, A-R05, A-R06, A-R07, A-R08, A-R09, and A-R10.",
+      "fact_ids": [
+       "F02",
+       "F03",
+       "F04",
+       "F05",
+       "F06",
+       "F07",
+       "F08",
+       "F09",
+       "F10",
+       "F11"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": [
+  {
+   "section": "Source reports",
+   "sentence": "Source reports include A-R01, A-R02, A-R03, A-R04, A-R05, A-R06, A-R07, A-R08, A-R09, and A-R10.",
+   "problem": "cites a profile fact in section 'Source reports'; profile facts belong in: Patient and records; 7. Missing or unverified information"
+  }
+ ]
+}

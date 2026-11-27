@@ -1,0 +1,181 @@
+{
+ "status": "passed",
+ "attempts": 1,
+ "model": "gemini-3.5-flash-lite",
+ "prompt_version": "2026-11-27.5",
+ "summary": {
+  "sections": [
+   {
+    "title": "About your records",
+    "sentences": [
+     {
+      "text": "The records contain 15 source reports dated 1952-04-22 to 2021-06-11 for a 71-year-old male patient.",
+      "fact_ids": [
+       "F01"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Health conditions in your records",
+    "sentences": [
+     {
+      "text": "Your records list active conditions including diabetes, hypertriglyceridemia, metabolic syndrome X, anemia, diabetic retinopathy associated with type II diabetes mellitus, neuropathy due to type 2 diabetes mellitus, nonproliferative diabetic retinopathy due to type 2 diabetes mellitus, hyperlipidemia, and macular edema and retinopathy due to type 2 diabetes mellitus.",
+      "fact_ids": [
+       "F17",
+       "F18",
+       "F19",
+       "F20",
+       "F21",
+       "F22",
+       "F23",
+       "F24",
+       "F25"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Test results to look at",
+    "sentences": [
+     {
+      "text": "For blood sugar (glucose), the latest value is 100.2 mg/dL on 2021-06-11, which is above the usual range of 70-99 mg/dL.",
+      "fact_ids": [
+       "F37"
+      ]
+     },
+     {
+      "text": "Over the last 3 reports between 2020-06-05 and 2021-06-11, blood sugar (glucose) went up from 105.7 mg/dL to 109.1 mg/dL and then 100.2 mg/dL.",
+      "fact_ids": [
+       "F38"
+      ]
+     },
+     {
+      "text": "For HbA1c (average blood sugar over the last few months), the latest value is 7 % on 2021-06-11, which is above the usual range of 4-5.6 %.",
+      "fact_ids": [
+       "F41"
+      ]
+     },
+     {
+      "text": "Over the last 3 reports between 2019-11-08 and 2021-06-11, HbA1c (average blood sugar over the last few months) stayed at 7 %, then 7 %, and then 7 %.",
+      "fact_ids": [
+       "F42"
+      ]
+     },
+     {
+      "text": "For LDL cholesterol (often called 'bad' cholesterol), the latest value is 153 mg/dL on 2021-06-11, which is above the usual range of below 100 mg/dL.",
+      "fact_ids": [
+       "F44"
+      ]
+     },
+     {
+      "text": "Over the last 3 reports between 2020-06-05 and 2021-06-11, LDL cholesterol (often called 'bad' cholesterol) went up from 128.5 mg/dL to 126.3 mg/dL and then 153 mg/dL.",
+      "fact_ids": [
+       "F45"
+      ]
+     },
+     {
+      "text": "For SGPT (a liver enzyme), the latest value is 59.6 U/L on 2021-04-15, which is above the usual range of 7-40 U/L.",
+      "fact_ids": [
+       "F50"
+      ]
+     },
+     {
+      "text": "Over the last 3 reports between 2019-04-16 and 2021-04-15, SGPT (a liver enzyme) went up from 24.4 U/L to 34.7 U/L and then 59.6 U/L.",
+      "fact_ids": [
+       "F51"
+      ]
+     },
+     {
+      "text": "For total cholesterol, the latest value is 237.5 mg/dL on 2021-06-11, which is above the usual range of below 200 mg/dL.",
+      "fact_ids": [
+       "F58"
+      ]
+     },
+     {
+      "text": "Over the last 3 reports between 2020-06-05 and 2021-06-11, total cholesterol went down from 213.7 mg/dL to 173.4 mg/dL and then up to 237.5 mg/dL.",
+      "fact_ids": [
+       "F59"
+      ]
+     },
+     {
+      "text": "For triglycerides (a type of blood fat), the latest value is 196.5 mg/dL on 2021-06-11, which is above the usual range of below 150 mg/dL.",
+      "fact_ids": [
+       "F62"
+      ]
+     },
+     {
+      "text": "Over the last 3 reports between 2020-06-05 and 2021-06-11, triglycerides (a type of blood fat) went up from 187.6 mg/dL to 131.4 mg/dL and then 196.5 mg/dL.",
+      "fact_ids": [
+       "F63"
+      ]
+     },
+     {
+      "text": "All other test results in your records did not raise an alert.",
+      "fact_ids": [
+       "F31",
+       "F33",
+       "F35",
+       "F39",
+       "F43",
+       "F46",
+       "F48",
+       "F52",
+       "F54",
+       "F56",
+       "F60",
+       "F64",
+       "F66"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Blood pressure and haemoglobin",
+    "sentences": [
+     {
+      "text": "Blood-pressure screening is normal, with a latest reading of 110/84 on 2021-06-11.",
+      "fact_ids": [
+       "F68"
+      ]
+     },
+     {
+      "text": "Anaemia screening is normal, with a haemoglobin level of 15.7 g/dL.",
+      "fact_ids": [
+       "F43",
+       "F69"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Your medicines and allergies",
+    "sentences": [
+     {
+      "text": "Your ongoing medicines are Simvastatin 10 MG Oral Tablet, 120 ACTUAT Fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler, and NDA020503 200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler, and no allergies are recorded in the supplied records.",
+      "fact_ids": [
+       "F27",
+       "F28",
+       "F29",
+       "F30"
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Points to discuss with your doctor",
+    "sentences": [
+     {
+      "text": "You may want to discuss your blood sugar, cholesterol levels, and liver enzyme results with your doctor.",
+      "fact_ids": [
+       "F37",
+       "F44",
+       "F50"
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problems_before_retry": []
+}

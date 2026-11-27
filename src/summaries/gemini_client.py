@@ -11,6 +11,7 @@ Test from the project folder:
 """
 import json
 import os
+import re
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -24,6 +25,26 @@ TIMEOUT_MS = 60_000                         # give up after 60 seconds
 
 class GeminiUnavailable(Exception):
     """Gemini could not produce a usable answer; use the template summary instead."""
+
+
+class GeminiBadAnswer(GeminiUnavailable):
+    """Gemini answered, but the answer could not be read (e.g. broken or cut-off JSON). Worth one retry."""
+
+
+def parse_json(text):
+    """Read Gemini's JSON answer. Accepts ```json fences and ignores extra text after the JSON object."""
+    text = (text or "").strip()
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    try:
+        answer, _ = json.JSONDecoder().raw_decode(text)
+        return answer
+    except json.JSONDecodeError as error:
+        raise GeminiBadAnswer(f"Gemini did not return valid JSON ({error.msg} at character {error.pos} "
+                              f"of {len(text)}): {text[:120]}") from error
 
 
 def model_name():
@@ -58,11 +79,14 @@ def generate_json(prompt, system_instruction=None, temperature=0.2):
     except Exception as error:                # no internet, timeout, ...
         raise GeminiUnavailable(f"Could not reach Gemini: {type(error).__name__}: {error}") from error
 
-    text = response.text or ""
     try:
-        return json.loads(text)
-    except json.JSONDecodeError as error:
-        raise GeminiUnavailable(f"Gemini did not return valid JSON: {text[:200]}") from error
+        return parse_json(response.text)
+    except GeminiBadAnswer as error:
+        try:                                    # e.g. MAX_TOKENS means the answer was cut off
+            reason = response.candidates[0].finish_reason
+        except Exception:
+            reason = None
+        raise GeminiBadAnswer(f"{error} (finish reason: {reason})") from error
 
 
 if __name__ == "__main__":

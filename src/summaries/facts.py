@@ -31,6 +31,12 @@ STATUS_TEXT = {"high": "above the reference range", "low": "below the reference 
                "normal": "within the reference range", "no_reference_range": "no reference range given"}
 
 
+MEANING_TEXT = {"worsening": ", worsening (moving away from the reference range)",
+                "improving": ", improving (moving towards the reference range)",
+                "unclear": ", no reference range to judge the change",
+                "not_a_concern": ", towards the side that is not usually a concern for this test"}
+
+
 class FactSheet:
     def __init__(self):
         self.facts = []
@@ -57,7 +63,7 @@ def build_facts(analysis):
     for r in reports:
         sheet.add("source_report", f"{r['report_id']}: {r['report_type']} dated {r['report_date']} "
                   f"({r['description']}, {r['facility']}).", [r["report_id"]], section="sources",
-                  report_id=r["report_id"], date=r["report_date"])
+                  report_id=r["report_id"], date=r["report_date"], facility=r.get("facility"))
 
     # Documented history
     for c in analysis["conditions"]["active"]:
@@ -96,7 +102,7 @@ def build_facts(analysis):
             series = " -> ".join(num(p["value"]) for p in points)
             sheet_text = (f"{t['test_name']} over the last {len(points)} reports: {series} {t['unit']} "
                           f"({', '.join(p['test_date'] for p in points)}); direction: {t['direction']}"
-                          f"{'' if t['trend_meaning'] in (t['direction'], 'within_range') else ', ' + t['trend_meaning']}.")
+                          f"{MEANING_TEXT.get(t['trend_meaning'], '')}.")
             trend_id = sheet.add("trend", sheet_text, [p["report_id"] for p in points],
                                  [p["value"] for p in points], section="trends", test_name=t["test_name"],
                                  direction=t["direction"], meaning=t["trend_meaning"],
@@ -124,7 +130,9 @@ def build_facts(analysis):
                     f"Model note: {risk['note']}")
             if risk.get("already_documented"):
                 names = ", ".join(d["name"] for d in risk["already_documented"])
-                text += (f" {names} is already a documented diagnosis, so this estimate of undiagnosed risk "
+                verb = "is already a documented diagnosis" if len(risk["already_documented"]) == 1 \
+                    else "are already documented diagnoses"
+                text += (f" {names} {verb}, so this estimate of undiagnosed risk "
                          f"is not meaningful for this patient.")
             sheet.add("ml_estimate", text,
                       risk.get("source_report_ids", []) + [d["report_id"] for d in risk.get("already_documented", [])],
